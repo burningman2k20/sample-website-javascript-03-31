@@ -19,7 +19,7 @@ body, html {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 12% 8% 30% 30% 20%;
 }
-  
+
 .co-bg-lightgray {
     background-color: #f4f4f4 /*gray backgrond*/
 }
