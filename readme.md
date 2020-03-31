@@ -1,9 +1,15 @@
 javascript exercise
 due april 3rd 2020 @ 5:00pm (end of class)
 
-use media queries from previuos project as a start point
+use media queries from previous project as a start point - min 500px med 776px lrg 992 max 1200
 
-who i think would do best for each page
+*each page will have a div container class*
+
+font classes - gervan*
+
+colours (foreground/background) - roaa*
+
+*who is confirmed to do each page*
 
 page 1 - gervan*
 
