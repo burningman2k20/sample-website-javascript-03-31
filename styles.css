@@ -1,19 +1,27 @@
 .co-1 {
-    color: #f4f4f4 /*gray backgrond*/
+    background-color: #f4f4f4 /*gray backgrond*/
 }
 
 .co-2 {
-    color:#b0b8ba  /*whit text*/
+    background-color: #fdc107 /*yello button */
 }
 
 .co-3 {
-    color: #fdc107 /*yello button and text*/
+    background-color: #282627 /*drck gray button*/
 }
 
 .co-4 {
-    color: #282627 /*drck gray text and button*/
+    background-color: #31302e /*drck gray fotter background*/
 }
 
-.co-5 {
-    color: #31302e /*drck gray fotter background*/
+.co-t-1 {
+    color:#b0b8ba  /*whit text*/
+}
+
+.co-t-2 {
+    color: #282627 /*drck gray text */
+}
+
+.co-t-3 {
+    color: #fdc107 /*yello text*/
 }
