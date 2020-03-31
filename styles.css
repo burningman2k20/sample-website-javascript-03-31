@@ -1,3 +1,25 @@
+body, html {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  /*
+    Using the grid.
+    * there are 4 columns of equal size. so to span the entire length
+      you will need to use column end 5.
+    * there are 5 rows all of different sizes, the end row will be
+      row end 6.
+    * reffer to article https://css-tricks.com/snippets/css/complete-guide-grid/
+      for alignment option and any other tips you may need to place your
+      child elements.
+  */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 12% 8% 30% 30% 20%;
+}
+  
 .co-1 {
     background-color: #f4f4f4 /*gray backgrond*/
 }
