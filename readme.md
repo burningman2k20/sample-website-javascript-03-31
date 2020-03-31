@@ -1,7 +1,8 @@
 javascript exercise
 due april 3rd 2020 @ 5:00pm (end of class)
 
-use media queries from previous project as a start point - min 500px med 776px lrg 992 max 1200
+*use media queries from previous project as a start point*
+*min 500px med 776px lrg 992 max 1200*
 
 *each page will have a div container class*
 
