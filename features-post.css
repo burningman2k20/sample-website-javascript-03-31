@@ -5,23 +5,28 @@ grid-template-rows: 1fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 border: 1px solid black;
-grid-
+height: 75vh;
+
 }
 
 .center-text {
   text-align: center;
 }
+
 .features-first-column {
 
   grid-area: 1 / 1;
+  border:1px solid black;
 }
 
 .features-second-column {
 
   grid-area: 1 / 2;
+  border:1px solid black;
 }
 
 .features-third-column {
 
   grid-area: 1 / 3;
+  border:1px solid black;
 }
