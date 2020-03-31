@@ -19,8 +19,7 @@ body, html {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 12% 8% 30% 30% 20%;
 }
-
-
+  
 .co-bg-lightgray {
     background-color: #f4f4f4 /*gray backgrond*/
 }
@@ -46,11 +45,10 @@ body, html {
 }
 
 .co-t-yellow {
-    color: #cb9f17 /*yellow text*/
+    color: #fdc107 /*yellow text*/
 }
-
 /*aus+dive css*/
-.container-aus-david {
+.container {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3,350px);
@@ -59,7 +57,7 @@ body, html {
     justify-content:center;
 }
 
-.center-img {
+.center-imgs {
     justify-content: center;
 }
 
@@ -89,12 +87,13 @@ body, html {
     background-color: white;
     border: solid;
 }
+/*aus+dive css*/
 
 /*roaa almadi*/
-.page2-img {
+.p2-img {
     grid-area: photo;
     height: 50%;
-    width: 70%;
+    width: 60%;
     background-position: center;
 }
 
@@ -106,53 +105,7 @@ body, html {
 
 .text-position {
     text-align: left;
-    width: 85%;
+    width: 90%;
     height: 35%;
-}
-
-/***********************/
-/*footer*/
-/***********************/
-.container.footer {
-    padding-left:30px;
-    padding-right: 30px;
-    height:70vh;
-    grid-template-rows: 1fr 4fr;
-}
-
-.footer-item {
-    padding-left: 30%;
-}
-
-.footer-header {
-    margin-bottom: 0px;
-    text-transform: uppercase;
-    letter-spacing: .7px;
-    word-spacing: 2px;
-}
-
-.list-no-style {
-    padding:0;
-    list-style: none;
-}
-
-.site-links-list {
-    padding-left: 15px;
-}
-
-.site-links-item {
-    margin: 15px auto;
-}
-
-#form-newsletter {
-    display: flex;
-    padding: 0px;
-    margin: 0px;
-}
-
-.form-element {
-    letter-spacing: .5px;
-    border: none;
-    padding: 15px;
 }
 
