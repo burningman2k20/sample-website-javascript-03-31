@@ -11,6 +11,6 @@ page 3 - aus/david
 
 page 4 - lalaantika
 
-page 5 - dan (our latest blog section)
+page 5 - dan / thom (our latest blog section)
 
 page 6 - moj (footer)
