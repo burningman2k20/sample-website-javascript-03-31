@@ -48,6 +48,48 @@ body, html {
     color: #fdc107 /*yello text*/
 }
 
+/*aus+dive css*/
+.container-aus-david {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3,350px);
+    padding: 5px;
+    height: 570px;
+}
+
+.center-img {
+    justify-content: center;
+}
+
+.center-text {
+    display: flex;
+    justify-content: center;
+}
+
+.photo {
+    grid-area: photo;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.box {
+    border-radius: 3px;
+    text-align: center;
+    background-color: white;
+    color: white;
+    height: 450px;
+}
+
+.btn {
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    border: solid;
+}
+
+/*aus+dive css*/
+
 /***********************/
 /*footer*/
 /***********************/
@@ -93,10 +135,3 @@ body, html {
     border: none;
     padding: 15px;
 }
-
-
-
-
-
-
-
