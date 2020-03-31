@@ -56,7 +56,7 @@ body, html {
     height: 570px;
 }
 
-.center-imgs {
+.center-img {
     justify-content: center;
 }
 
@@ -86,4 +86,5 @@ body, html {
     background-color: white;
     border: solid;
 }
+
 /*aus+dive css*/
