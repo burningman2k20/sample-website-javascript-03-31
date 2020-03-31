@@ -1,0 +1,85 @@
+/*  Font classes  */
+.font-one-sm {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.font-one-md {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.font-one-lg {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.font-two-sm {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.font-two-md {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+.font-two-lg {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+}
+
+.font-thin {
+    font-weight: 100;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.font-white {
+  color: white;
+}
+
+.font-yellow {
+  color: #EFA40C;
+}
+
+
+/*  End of Font classes */
+
+/*  Start of 1st page classes */
+.page1-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 7% 5% 83% 5%;
+}
+
+.background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.img-bg-home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/page1_sample.jpg');
+}
+
+.page1-top {
+  background-color: #3B5999;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
