@@ -1,3 +1,26 @@
+/*  this is reset code and should be kept at the top of the document */
+body, html {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  /*
+    Using the grid.
+    * there are 4 columns of equal size. so to span the entire length
+      you will need to use column end 5.
+    * there are 5 rows all of different sizes, the end row will be
+      row end 6.
+    * reffer to article https://css-tricks.com/snippets/css/complete-guide-grid/
+      for alignment option and any other tips you may need to place your
+      child elements.
+  */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 12% 8% 30% 30% 8% 12%;
+}
+
 .nav {
     grid-column-start: 3;
     grid-column-end: 5;
@@ -36,28 +59,6 @@
     margin: auto;
 }
 
-/*  this is reset code and should be kept at the top of the document */
-body, html {
-  padding: 0px;
-  margin: 0px;
-}
-
-.container {
-  display: grid;
-  height: 100vh;
-  /*
-    Using the grid.
-    * there are 4 columns of equal size. so to span the entire length
-      you will need to use column end 5.
-    * there are 5 rows all of different sizes, the end row will be
-      row end 6.
-    * reffer to article https://css-tricks.com/snippets/css/complete-guide-grid/
-      for alignment option and any other tips you may need to place your
-      child elements.
-  */
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 12% 8% 30% 30% 8% 12%;
-}
 .container-thom {
     display: grid;
     grid-gap: 10px;
@@ -352,4 +353,25 @@ body, html {
     grid-row-start: 5;
     margin-left: 250px;
 
+}
+
+/*  Dan and Thom css  */
+.blog-title {
+
+}
+
+.blog-img-col1-top {
+
+}
+
+.blog-img-col2-top {
+
+}
+
+.blog-img-col1-bottom {
+
+}
+
+.blog-img-col2-bottom {
+  
 }
