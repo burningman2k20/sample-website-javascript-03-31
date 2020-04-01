@@ -326,92 +326,193 @@ body, html {
     grid-column: 2/4;
 }
 
-.page1-bottom{
-  grid-column: 1/5;
-  grid-row: 3/5;
-  padding-left: 100px;
+/***********************/
+/*footer*/
+/***********************/
+.container.footer {
+    justify-content: space-around;
+    column-gap: 3%;
+    height: auto;
+    padding: 2% 8% 3%;
 }
 
-.background {
-  background: linear-gradient( rgba(0, 0, 0, 0.00001), rgba(0, 0, 0, .000001)), url('images/page1_bkgd.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  grid-column: 1/5;
-  grid-row: 3/5;
+.footer-header {
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    word-spacing: 2px;
 }
 
-.margin-sml {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.list-no-style {
+    padding: 0;
+    list-style: none;
 }
 
-.margin-mix {
-  margin-top: 60px;
-  margin-bottom: 15px;
+.site-links-list {
+    margin-top: 0;
+    padding-left: 15px;
 }
 
-.margin-right {
-  margin-right: 60%;
-  line-height: 1.5rem;
+.site-links-item {
+    margin: 0px auto 15px auto;
 }
 
-.btn-reverse {
-    padding: 15px 25px 15px 25px;
-    background-color: #0d0c00;
-    color: white;
-    border-style:solid;
-    border-color: white;
-    border-width: 1.5px;
-    margin-top: 10px;
+.site-links-item a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.page1-pages {
-  grid-column: 2/4;
-  margin-top: 25px;
+.pop-posts-item {
+    display: grid;
+    grid-template-areas: "image title"
+        "image body";
+    column-gap: 15px;
+    align-items: start;
+    margin-bottom: 20px;
+    height: 65px;
+    overflow-y: hidden;
+
 }
 
-.ruledivide {
-  border-style: dotted none none;
-  border-color: #fdc107;
-  border-width: 12px ;
-  align-content: center;
-  width: 10%;
+.pop-posts-img {
+    grid-area: image;
+    object-fit: cover;
+    border: 3px solid white;
+    width: 50px;
+    height: 50px;
 }
 
-/*start page 4 css*/
-
-.page4heading {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row: 1;
-    text-align: center;
-    margin-top: 20px;
+.pop-posts-title {
+    margin: 0;
 }
 
-.wordpresslogo {
-    grid-column-start: 3;
-    grid-row: 2;
-    margin-left: 20px;
-    margin-top: 50px;
+.pop-posts-body {
+    margin: 0;
+    overflow: hidden;
 }
 
-.wordpressimg {
-    width: 150%;
+#form-newsletter {
+    width: auto;
+    display: flex;
+    padding: 0px;
+    margin: 30px 0px;
 }
 
-.wordpresslist {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 2;
-    margin-left: 150px;
-    margin-top: 50px;
+.newsletter p {
+    margin: 0;
 }
-.page4button {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 5;
-    margin-left: 250px;
 
+.form-element {
+    max-width: 130px;
+    border: none;
+    padding: 12px;
+    text-overflow: ellipsis;
+}
+
+.btn-submit {
+    letter-spacing: 1px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 10%;
+}
+
+@media only screen and (min-width: 777px) and (max-width: 992px) {
+    .container.footer {
+        column-gap: 3%;
+        padding: 2% 4% 3%;
+    }
+
+    .footer-header {
+        letter-spacing: .3px;
+        word-spacing: 1px;
+    }
+
+    .site-links-item {
+        margin: 0 auto 15px;
+    }
+
+    .pop-posts-item {
+        margin-bottom: 15px;
+        height: auto;
+    }
+
+    .pop-posts-img {
+        display: none;
+    }
+
+    .pop-posts-title {
+        margin: 0;
+    }
+
+    .pop-posts-body {
+        display: none;
+    }
+
+    #form-newsletter {
+        display: block;
+        margin: 20px 0px;
+    }
+
+    .form-element {
+        max-width: 100%;
+        padding: 6px;
+        margin-bottom: 4px;
+    }
+
+    .btn-submit {
+        letter-spacing: 1px;
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 776px) {
+    .container.footer {
+        column-gap: 1%;
+        padding: 1% 2%;
+    }
+
+    .footer-header {
+        word-spacing: .5px;
+        white-space: nowrap;
+    }
+
+    .site-links-item {
+        margin: 0 auto 10px;
+    }
+
+    .pop-posts-item {
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    .pop-posts-img {
+        display: none;
+    }
+
+    .pop-posts-title {
+        margin: 0;
+    }
+
+    .pop-posts-body {
+        display: none;
+    }
+
+    #form-newsletter {
+        display: block;
+        margin: 20px 0px;
+    }
+
+    .form-element {
+        max-width: 100%;
+        padding: 6px;
+        margin-bottom: 4px;
+    }
+
+    .btn-submit {
+        float: right;
+    }
 }
 
 .page1-bottom{
@@ -504,11 +605,20 @@ body, html {
 
 /*  Dan and Thom css  */
 .blog-title {
-
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
 }
 
 .blog-img-col1-top {
-
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 2;
+  justify-self: end;
+  align-self: stretch;
 }
 
 .blog-img-col2-top {
@@ -520,201 +630,9 @@ body, html {
 }
 
 .blog-img-col2-bottom {
-  
-}
-
-/***********************/
-/*footer*/
-/***********************/
-
-.overflow-hidden {
-    overflow: hidden;
-}
-
-.container.footer {
-    justify-content: space-around;
-    column-gap: 3%;
-    height: auto;
-    padding: 2% 8% 3%;
-}
-
-.footer-header {
-    text-transform: uppercase;
-    letter-spacing: .7px;
-    word-spacing: 2px;
-}
-
-.list-no-style {
-    padding: 0;
-    list-style: none;
-}
-
-.site-links-list {
-    margin-top: 0;
-    padding-left: 15px;
-}
-
-.site-links-item {
-    margin: 0px auto 15px auto;
-}
-
-.footer a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.pop-posts-item {
-    display: grid;
-    grid-template-areas: "image title"
-        "image body";
-    column-gap: 15px;
-    align-items: start;
-    margin-bottom: 20px;
-    height: 65px;
-    overflow-y: hidden;
 
 }
 
-.pop-posts-img {
-    grid-area: image;
-    object-fit: cover;
-    border: 3px solid white;
-    width: 50px;
-    height: 50px;
+.blog-item {
+  flex-direction: row;
 }
-
-.pop-posts-title {
-    margin: 0;
-    line-height: 14px;
-}
-
-.pop-posts-body {
-    margin: 0;
-    line-height: 12px;
-}
-
-#form-newsletter {
-    width: auto;
-    display: flex;
-    padding: 0px;
-    margin: 30px 0px;
-}
-
-.newsletter p {
-    margin: 0;
-}
-
-.form-element {
-    max-width: 130px;
-    border: none;
-    padding: 12px;
-    text-overflow: ellipsis;
-}
-
-.btn-submit {
-    letter-spacing: 1px;
-}
-
-.copyright {
-    display: flex;
-    justify-content: space-between;
-    padding: 2% 10%;
-}
-
-@media only screen and (min-width: 777px) and (max-width: 992px) {
-    .container.footer {
-        column-gap: 3%;
-        padding: 2% 4% 3%;
-    }
-
-    .footer-header {
-        letter-spacing: .3px;
-        word-spacing: 1px;
-    }
-
-    .site-links-item {
-        margin: 0 auto 15px;
-    }
-
-    .pop-posts-item {
-        margin-bottom: 15px;
-        height: auto;
-    }
-
-    .pop-posts-img {
-        display: visible;
-    }
-
-    .pop-posts-title {
-        margin: 0;
-    }
-
-    .pop-posts-body {
-        display: none;
-    }
-
-    #form-newsletter {
-        display: block;
-        margin: 20px 0px;
-    }
-
-    .form-element {
-        max-width: 100%;
-        padding: 6px;
-        margin-bottom: 4px;
-    }
-
-    .btn-submit {
-        letter-spacing: 1px;
-        float: right;
-    }
-}
-
-@media only screen and (max-width: 776px) {
-    .container.footer {
-        column-gap: 1%;
-        padding: 1% 2%;
-    }
-
-    .footer-header {
-        word-spacing: .5px;
-        white-space: nowrap;
-    }
-
-    .site-links-item {
-        margin: 0 auto 10px;
-    }
-
-    .pop-posts-item {
-        margin-bottom: 10px;
-        height: auto;
-    }
-
-    .pop-posts-img {
-        display: none;
-    }
-
-    .pop-posts-title {
-        margin: 0;
-    }
-
-    .pop-posts-body {
-        display: none;
-    }
-
-    #form-newsletter {
-        display: block;
-        margin: 20px 0px;
-    }
-
-    .form-element {
-        max-width: 100%;
-        padding: 6px;
-        margin-bottom: 4px;
-    }
-
-    .btn-submit {
-        float: right;
-    }
-}
-
