@@ -98,12 +98,7 @@ html {
 
 .font-one-xsm {
     font-family: 'Open Sans', sans-serif;
-    font-size: .7rem;
-}
-
-.font-one-xsm {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.85rem;
+    font-size: 0.7rem;
 }
 
 .font-one-sm {
@@ -184,12 +179,7 @@ html {
     grid-template-columns: repeat(3, 350px);
     padding: 5px;
     height: 570px;
-<<<<<<< HEAD
     justify-content:center;
-   
-=======
-    justify-content: center;
->>>>>>> e6d32d4be0afb3336659195c218488d19dc110d9
 }
 
 .center-img {
@@ -484,7 +474,6 @@ html {
 .pop-posts-body {
     margin: 0;
     overflow: hidden;
-    line-height: 16px;
 }
 
 #form-newsletter {
