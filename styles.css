@@ -95,9 +95,12 @@ body, html {
 .page2-img {
     grid-area: photo;
     height: 50%;
-    width: 70%;
+    width: 90%;
     background-position: center;
+    margin-right: 50px;
+
 }
+
 
 .yellow-btn {
     padding: 10px 15px 10px 15px;
