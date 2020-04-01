@@ -117,19 +117,16 @@ body, html {
 .font-one-sm {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
-    font-weight: 400;
 }
 
 .font-one-md {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
-    font-weight: 500;
 }
 
 .font-one-lg {
     font-family: 'Open Sans', sans-serif;
     font-size: 4rem;
-
 }
 
 .font-two-sm {
@@ -190,7 +187,6 @@ body, html {
     width: 90%;
     background-position: center;
     margin-right: 50px;
-
 }
 
 
@@ -223,8 +219,8 @@ body, html {
     grid-row: 2/2;
     justify-content: center;
     padding-top: 10px;
-
 }
+
 .page1-nav a{
     margin: 5px 20px 0 20px;
     text-decoration: none;
@@ -278,7 +274,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   grid-column: 1/5;
-  grid-row: 3/5;
+  grid-row: 3/6;
 }
 
 .margin-sml {
@@ -297,13 +293,13 @@ body, html {
 }
 
 .btn-reverse {
-    padding: 15px 25px 15px 25px;
-    background-color: #0d0c00;
-    color: white;
-    border-style:solid;
-    border-color: white;
-    border-width: 1.5px;
-    margin-top: 10px;
+  padding: 15px 25px 15px 25px;
+  background-color: #0d0c00;
+  color: white;
+  border-style:solid;
+  border-color: white;
+  border-width: 1.5px;
+  margin-top: 10px;
 }
 
 .page1-pages {
