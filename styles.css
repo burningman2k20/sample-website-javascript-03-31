@@ -613,6 +613,8 @@ body, html {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row: 2;
+  justify-self: end;
+  align-self: stretch;
 }
 
 .blog-img-col2-top {
