@@ -5,9 +5,11 @@ body, html {
 }
 
 .container {
-    display: grid;
-    height: 100vh;
-    /*
+
+  display: grid;
+  height: 100vh;
+  /*
+
     Using the grid.
     * there are 4 columns of equal size. so to span the entire length
       you will need to use column end 5.
@@ -595,4 +597,25 @@ body, html {
     grid-row-start: 5;
     margin-left: 250px;
 
+}
+
+/*  Dan and Thom css  */
+.blog-title {
+
+}
+
+.blog-img-col1-top {
+
+}
+
+.blog-img-col2-top {
+
+}
+
+.blog-img-col1-bottom {
+
+}
+
+.blog-img-col2-bottom {
+  
 }
