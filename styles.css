@@ -5,9 +5,11 @@ body, html {
 }
 
 .container {
+
   display: grid;
   height: 100vh;
   /*
+
     Using the grid.
     * there are 4 columns of equal size. so to span the entire length
       you will need to use column end 5.
@@ -41,6 +43,7 @@ body, html {
     color: white;
 }
 
+/*
 .post-footer {
   width: 60%;
   grid-column-start: 2;
@@ -58,6 +61,7 @@ body, html {
     grid-row-end: 4;
     margin: auto;
 }
+*/
 
 .container-thom {
     display: grid;
@@ -69,31 +73,38 @@ body, html {
 }
 
 .co-bg-lightgray {
-    background-color: #f4f4f4; /*gray backgrond*/
+    background-color: #f4f4f4
+        /*gray backgrond*/
 }
 
-.co-bg-yellow{
-    background-color: #fdc107; /*yellow button */
+.co-bg-yellow {
+    background-color: #fdc107
+        /*yellow button */
 }
 
 .co-bg-gray {
-    background-color: #282627; /*drck gray button*/
+    background-color: #282627
+        /*drck gray button*/
 }
 
-.co-bg-darkgray{
-    background-color: #31302e; /*drck gray fotter background*/
+.co-bg-darkgray {
+    background-color: #31302e
+        /*drck gray fotter background*/
 }
 
 .co-t-white {
-    color: white;  /*white text*/
+    color: #b0b8ba
+        /*white text*/
 }
 
 .co-t-gray {
-    color: darkgray; /*drck gray text */
+    color: #282627
+        /*drck gray text */
 }
 
 .co-t-yellow {
-    color: #fdc107; /*yellow text*/
+    color: #cb9f17
+        /*yellow text*/
 }
 
 .co-t-black{
@@ -101,8 +112,41 @@ body, html {
 }
 
 
-/*  Font classes  */
+.co-t-dimgray {
+    color: dimgrey;
+}
 
+.co-bg-yellow {
+    background-color: #fdc107;
+    /*yellow button */
+}
+
+.co-bg-gray {
+    background-color: #282627;
+    /*drck gray button*/
+}
+
+.co-bg-darkgray {
+    background-color: #31302e;
+    /*drck gray fotter background*/
+}
+
+.co-t-white {
+    color: white;
+    /*white text*/
+}
+
+.co-t-gray {
+    color: darkgray;
+    /*drck gray text */
+}
+
+.co-t-yellow {
+    color: #fdc107;
+    /*yellow text*/
+}
+
+/*  Font classes  */
 .font-thin {
     font-weight: 100;
 }
@@ -112,22 +156,31 @@ body, html {
 }
 
 .font-bold {
-  font-weight: 600;
+    font-weight: 600;
+}
+
+.font-one-xsm {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .7rem;
+    font-weight: 600;
 }
 
 .font-one-sm {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
+    font-weight: 400;
 }
 
 .font-one-md {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
+    font-weight: 500;
 }
 
 .font-one-lg {
     font-family: 'Open Sans', sans-serif;
     font-size: 4rem;
+
 }
 
 .font-two-sm {
@@ -142,10 +195,10 @@ body, html {
 .container-aus-david {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(3,350px);
+    grid-template-columns: repeat(3, 350px);
     padding: 5px;
     height: 570px;
-    justify-content:center;
+    justify-content: center;
 }
 
 .center-img {
@@ -179,8 +232,6 @@ body, html {
     border: solid;
 }
 
-/*aus+dive css*/
-
 /*roaa almadi*/
 .page2-img {
     grid-area: photo;
@@ -188,13 +239,14 @@ body, html {
     width: 90%;
     background-position: center;
     margin-right: 50px;
+
 }
 
 
 .yellow-btn {
     padding: 10px 15px 10px 15px;
-    border:  hidden;
-    border-radius:3px;
+    border: hidden;
+    border-radius: 3px;
 }
 
 .text-position {
@@ -220,8 +272,8 @@ body, html {
     grid-row: 2/2;
     justify-content: center;
     padding-top: 10px;
-}
 
+}
 .page1-nav a{
     margin: 5px 20px 0 20px;
     text-decoration: none;
@@ -234,6 +286,7 @@ body, html {
     align-content:center;
     vertical-align: top;
     margin-left: 70px;
+
 }
 
 .nav-btn {
@@ -251,6 +304,7 @@ body, html {
 .padright {
   padding-top: 35px;
   padding-right: 100px;
+
 }
 
 
@@ -264,7 +318,200 @@ body, html {
     margin-left: 20px;
 }
 
-.page1-bottom {
+.page1-pages {
+    grid-column: 2/4;
+}
+
+/***********************/
+/*footer*/
+/***********************/
+.container.footer {
+    justify-content: space-around;
+    column-gap: 3%;
+    height: auto;
+    padding: 2% 8% 3%;
+}
+
+.footer-header {
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    word-spacing: 2px;
+}
+
+.list-no-style {
+    padding: 0;
+    list-style: none;
+}
+
+.site-links-list {
+    margin-top: 0;
+    padding-left: 15px;
+}
+
+.site-links-item {
+    margin: 0px auto 15px auto;
+}
+
+.site-links-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.pop-posts-item {
+    display: grid;
+    grid-template-areas: "image title"
+        "image body";
+    column-gap: 15px;
+    align-items: start;
+    margin-bottom: 20px;
+    height: 65px;
+    overflow-y: hidden;
+
+}
+
+.pop-posts-img {
+    grid-area: image;
+    object-fit: cover;
+    border: 3px solid white;
+    width: 50px;
+    height: 50px;
+}
+
+.pop-posts-title {
+    margin: 0;
+}
+
+.pop-posts-body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#form-newsletter {
+    width: auto;
+    display: flex;
+    padding: 0px;
+    margin: 30px 0px;
+}
+
+.newsletter p {
+    margin: 0;
+}
+
+.form-element {
+    max-width: 130px;
+    border: none;
+    padding: 12px;
+    text-overflow: ellipsis;
+}
+
+.btn-submit {
+    letter-spacing: 1px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 10%;
+}
+
+@media only screen and (min-width: 777px) and (max-width: 992px) {
+    .container.footer {
+        column-gap: 3%;
+        padding: 2% 4% 3%;
+    }
+
+    .footer-header {
+        letter-spacing: .3px;
+        word-spacing: 1px;
+    }
+
+    .site-links-item {
+        margin: 0 auto 15px;
+    }
+
+    .pop-posts-item {
+        margin-bottom: 15px;
+        height: auto;
+    }
+
+    .pop-posts-img {
+        display: none;
+    }
+
+    .pop-posts-title {
+        margin: 0;
+    }
+
+    .pop-posts-body {
+        display: none;
+    }
+
+    #form-newsletter {
+        display: block;
+        margin: 20px 0px;
+    }
+
+    .form-element {
+        max-width: 100%;
+        padding: 6px;
+        margin-bottom: 4px;
+    }
+
+    .btn-submit {
+        letter-spacing: 1px;
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 776px) {
+    .container.footer {
+        column-gap: 1%;
+        padding: 1% 2%;
+    }
+
+    .footer-header {
+        word-spacing: .5px;
+        white-space: nowrap;
+    }
+
+    .site-links-item {
+        margin: 0 auto 10px;
+    }
+
+    .pop-posts-item {
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    .pop-posts-img {
+        display: none;
+    }
+
+    .pop-posts-title {
+        margin: 0;
+    }
+
+    .pop-posts-body {
+        display: none;
+    }
+
+    #form-newsletter {
+        display: block;
+        margin: 20px 0px;
+    }
+
+    .form-element {
+        max-width: 100%;
+        padding: 6px;
+        margin-bottom: 4px;
+    }
+
+    .btn-submit {
+        float: right;
+    }
+}
+
+.page1-bottom{
   grid-column: 1/5;
   grid-row: 3/5;
   padding-left: 100px;
@@ -275,7 +522,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   grid-column: 1/5;
-  grid-row: 3/6;
+  grid-row: 3/5;
 }
 
 .margin-sml {
@@ -294,13 +541,13 @@ body, html {
 }
 
 .btn-reverse {
-  padding: 15px 25px 15px 25px;
-  background-color: #0d0c00;
-  color: white;
-  border-style:solid;
-  border-color: white;
-  border-width: 1.5px;
-  margin-top: 10px;
+    padding: 15px 25px 15px 25px;
+    background-color: #0d0c00;
+    color: white;
+    border-style:solid;
+    border-color: white;
+    border-width: 1.5px;
+    margin-top: 10px;
 }
 
 .page1-pages {
@@ -314,6 +561,7 @@ body, html {
   border-width: 12px ;
   align-content: center;
   width: 10%;
+}
 
 /*start page 4 css*/
 
