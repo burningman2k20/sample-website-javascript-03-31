@@ -38,16 +38,50 @@ body, html {
 }
 
 .co-t-white {
-    color:#b0b8ba  /*white text*/
+    color: white;  /*white text*/
 }
 
 .co-t-gray {
-    color: #282627 /*drck gray text */
+    color: darkgray; /*drck gray text */
 }
 
 .co-t-yellow {
-    color: #cb9f17 /*yellow text*/
+    color: #cb9f17; /*yellow text*/
 }
+
+/*  Font classes  */
+
+.font-thin {
+    font-weight: 100;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.font-one-sm {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.font-one-md {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.font-one-lg {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+/*  End of Font classes */
 /*aus+dive css*/
 .container-aus-david {
     display: grid;
@@ -109,4 +143,64 @@ body, html {
     text-align: left;
     width: 85%;
     height: 35%;
+}
+
+/*  Start of 1st page classes */
+
+
+.page1-topbar {
+  background-color: #3B5999;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  height: 200px;
+}
+
+.page1-nav {
+  display: inline-flex;
+  background-color: #3092C3;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  margin-left: 50px;
+}
+
+
+.nav-btn {
+    display: inline-block;
+    background-color: #3092C3;
+    width: 20%;
+    padding: 0;
+    border-style: none;
+}
+
+.logolayout {
+  padding-left: 75px;
+  padding-top: 20px;
+}
+
+.logobutton {
+    background-color: #3B5999;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}
+
+.page1-bottom {
+  background-color: #1D212C;
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.page1-pages {
+  grid-column: 2/4;
+}
+
+.ruledivide {
+  border-style: dotted none none;
+  border-color: #cb9f17;
+  border-width: 12px ;
+  align-content: center;
+  width: 10%;
 }
