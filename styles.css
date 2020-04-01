@@ -5,11 +5,9 @@ body, html {
 }
 
 .container {
-
   display: grid;
   height: 100vh;
   /*
-
     Using the grid.
     * there are 4 columns of equal size. so to span the entire length
       you will need to use column end 5.
@@ -22,6 +20,100 @@ body, html {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 12% 8% 30% 30% 8% 12%;
 }
+
+/* Text and Background colors START here */
+.co-bg-lightgray {
+    background-color: #f4f4f4;    /*gray backgrond*/
+}
+
+.co-bg-gray {
+    background-color: #282627;    /*drck gray button*/
+}
+
+.co-bg-darkgray {
+    background-color: #31302e;    /*drck gray fotter background*/
+}
+
+.co-bg-yellow {
+    background-color: #fdc107;  /*yellow button */
+}
+
+.co-t-white {
+    color: white;  /*white text*/
+}
+
+.co-t-white2 {
+    color: #b0b8ba;  /*white text*/
+}
+
+.co-t-gray {
+    color: darkgray;  /*drck gray text */
+}
+
+.co-t-gray2 {
+    color: #282627;  /*drck gray text */
+}
+
+.co-t-dimgray {
+    color: dimgrey;
+}
+
+.co-t-yellow2 {
+    color: #cb9f17;    /*yellow text*/
+}
+
+.co-t-yellow {
+    color: #fdc107;  /*yellow text*/
+}
+
+.co-t-black{
+    color:black;
+}
+/* End of Text and Background colors*/
+
+/*  Font classes and decorations START here */
+.font-thin {
+    font-weight: 100;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-bold {
+    font-weight: 600;
+}
+
+.font-one-xsm {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .7rem;
+}
+
+.font-one-xsm {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.85rem;
+}
+
+.font-one-sm {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.font-one-md {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.font-one-lg {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+}
+
+.font-two-sm {
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+/*  End of Font classes and decorations */
 
 .nav {
     grid-column-start: 3;
@@ -72,125 +164,6 @@ body, html {
     justify-content:center;
 }
 
-.co-bg-lightgray {
-    background-color: #f4f4f4
-        /*gray backgrond*/
-}
-
-.co-bg-yellow {
-    background-color: #fdc107
-        /*yellow button */
-}
-
-.co-bg-gray {
-    background-color: #282627
-        /*drck gray button*/
-}
-
-.co-bg-darkgray {
-    background-color: #31302e
-        /*drck gray fotter background*/
-}
-
-.co-t-white {
-    color: #b0b8ba
-        /*white text*/
-}
-
-.co-t-gray {
-    color: #282627
-        /*drck gray text */
-}
-
-.co-t-yellow {
-    color: #cb9f17
-        /*yellow text*/
-}
-
-.co-t-black{
-    color:black;
-}
-
-
-.co-t-dimgray {
-    color: dimgrey;
-}
-
-.co-bg-yellow {
-    background-color: #fdc107;
-    /*yellow button */
-}
-
-.co-bg-gray {
-    background-color: #282627;
-    /*drck gray button*/
-}
-
-.co-bg-darkgray {
-    background-color: #31302e;
-    /*drck gray fotter background*/
-}
-
-.co-t-white {
-    color: white;
-    /*white text*/
-}
-
-.co-t-gray {
-    color: darkgray;
-    /*drck gray text */
-}
-
-.co-t-yellow {
-    color: #fdc107;
-    /*yellow text*/
-}
-
-/*  Font classes  */
-.font-thin {
-    font-weight: 100;
-}
-
-.font-italic {
-    font-style: italic;
-}
-
-.font-bold {
-    font-weight: 600;
-}
-
-.font-one-xsm {
-    font-family: 'Open Sans', sans-serif;
-    font-size: .7rem;
-    font-weight: 600;
-}
-
-.font-one-sm {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-.font-one-md {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-.font-one-lg {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 4rem;
-
-}
-
-.font-two-sm {
-    font-family: sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-/*  End of Font classes */
-
 /*aus+dive css*/
 .container-aus-david {
     display: grid;
@@ -198,7 +171,12 @@ body, html {
     grid-template-columns: repeat(3, 350px);
     padding: 5px;
     height: 570px;
+<<<<<<< HEAD
+    justify-content:center;
+   
+=======
     justify-content: center;
+>>>>>>> e6d32d4be0afb3336659195c218488d19dc110d9
 }
 
 .center-img {
@@ -224,6 +202,7 @@ body, html {
     background-color: white;
     color: white;
     height: 450px;
+    border-bottom:1.5px solid #eee;
 }
 
 .btn {
@@ -251,7 +230,7 @@ body, html {
 
 .text-position {
     text-align: left;
-    width: 85%;
+    width: 90%;
     height: 35%;
 }
 
