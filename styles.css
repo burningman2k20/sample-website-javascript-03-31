@@ -1,14 +1,15 @@
 /*  this is reset code and should be kept at the top of the document */
-body,
-html {
-    padding: 0px;
-    margin: 0px;
+body, html {
+  padding: 0px;
+  margin: 0px;
 }
 
 .container {
-    display: grid;
-    height: 100vh;
-    /*
+
+  display: grid;
+  height: 100vh;
+  /*
+
     Using the grid.
     * there are 4 columns of equal size. so to span the entire length
       you will need to use column end 5.
@@ -18,110 +19,9 @@ html {
       for alignment option and any other tips you may need to place your
       child elements.
   */
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 12% 8% 30% 30% 8% 12%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 12% 8% 30% 30% 8% 12%;
 }
-
-/* Text and Background colors START here */
-.co-bg-lightgray {
-    background-color: #f4f4f4;
-    /*gray backgrond*/
-}
-
-.co-bg-gray {
-    background-color: #282627;
-    /*drck gray button*/
-}
-
-.co-bg-darkgray {
-    background-color: #31302e;
-    /*drck gray fotter background*/
-}
-
-.co-bg-yellow {
-    background-color: #fdc107;
-    /*yellow button */
-}
-
-.co-t-white {
-    color: white;
-    /*white text*/
-}
-
-.co-t-white2 {
-    color: #b0b8ba;
-    /*white text*/
-}
-
-.co-t-gray {
-    color: darkgray;
-    /*drck gray text */
-}
-
-.co-t-gray2 {
-    color: #282627;
-    /*drck gray text */
-}
-
-.co-t-dimgray {
-    color: dimgrey;
-}
-
-.co-t-yellow2 {
-    color: #cb9f17;
-    /*yellow text*/
-}
-
-.co-t-yellow {
-    color: #fdc107;
-    /*yellow text*/
-}
-
-.co-t-black {
-    color: black;
-}
-
-/* End of Text and Background colors*/
-
-/*  Font classes and decorations START here */
-.font-thin {
-    font-weight: 100;
-}
-
-.font-italic {
-    font-style: italic;
-}
-
-.font-bold {
-    font-weight: 600;
-}
-
-.font-one-xsm {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.7rem;
-}
-
-.font-one-sm {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-}
-
-.font-one-md {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
-}
-
-.font-one-lg {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 4rem;
-}
-
-.font-two-sm {
-    font-family: sans-serif;
-    font-size: 1rem;
-}
-
-/*  End of Font classes and decorations */
 
 .nav {
     grid-column-start: 3;
@@ -166,11 +66,130 @@ html {
 .container-thom {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(2, 500px);
+    grid-template-columns: repeat(2,500px);
     padding: 25px;
     height: 570px;
-    justify-content: center;
+    justify-content:center;
 }
+
+.co-bg-lightgray {
+    background-color: #f4f4f4
+        /*gray backgrond*/
+}
+
+.co-bg-yellow {
+    background-color: #fdc107
+        /*yellow button */
+}
+
+.co-bg-gray {
+    background-color: #282627
+        /*drck gray button*/
+}
+
+.co-bg-darkgray {
+    background-color: #31302e
+        /*drck gray fotter background*/
+}
+
+.co-t-white {
+    color: #b0b8ba
+        /*white text*/
+}
+
+.co-t-gray {
+    color: #282627
+        /*drck gray text */
+}
+
+.co-t-yellow {
+    color: #cb9f17
+        /*yellow text*/
+}
+
+.co-t-black{
+    color:black;
+}
+
+
+.co-t-dimgray {
+    color: dimgrey;
+}
+
+.co-bg-yellow {
+    background-color: #fdc107;
+    /*yellow button */
+}
+
+.co-bg-gray {
+    background-color: #282627;
+    /*drck gray button*/
+}
+
+.co-bg-darkgray {
+    background-color: #31302e;
+    /*drck gray fotter background*/
+}
+
+.co-t-white {
+    color: white;
+    /*white text*/
+}
+
+.co-t-gray {
+    color: darkgray;
+    /*drck gray text */
+}
+
+.co-t-yellow {
+    color: #fdc107;
+    /*yellow text*/
+}
+
+/*  Font classes  */
+.font-thin {
+    font-weight: 100;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-bold {
+    font-weight: 600;
+}
+
+.font-one-xsm {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+.font-one-sm {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.font-one-md {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.font-one-lg {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+
+}
+
+.font-two-sm {
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/*  End of Font classes */
 
 /*aus+dive css*/
 .container-aus-david {
@@ -179,7 +198,7 @@ html {
     grid-template-columns: repeat(3, 350px);
     padding: 5px;
     height: 570px;
-    justify-content:center;
+    justify-content: center;
 }
 
 .center-img {
@@ -205,7 +224,6 @@ html {
     background-color: white;
     color: white;
     height: 450px;
-    border-bottom:1.5px solid #eee;
 }
 
 .btn {
@@ -233,7 +251,7 @@ html {
 
 .text-position {
     text-align: left;
-    width: 90%;
+    width: 85%;
     height: 35%;
 }
 
@@ -248,7 +266,7 @@ html {
 }
 
 .page1-nav {
-    display: flex;
+    display:flex;
     background-color: #3092C3;
     grid-column: 1/5;
     grid-row: 2/2;
@@ -256,17 +274,16 @@ html {
     padding-top: 10px;
 
 }
-
-.page1-nav a {
+.page1-nav a{
     margin: 5px 20px 0 20px;
     text-decoration: none;
     text-align: center;
 }
 
-.searchbar {
-    width: 15%;
+.searchbar{
+    width:15%;
     height: 20px;
-    align-content: center;
+    align-content:center;
     vertical-align: top;
     margin-left: 70px;
 
@@ -276,17 +293,17 @@ html {
     background-image: url(images/search.jfif);
     background-repeat: no-repeat;
     width: 35px;
-    height: 25px;
+    height:25px;
 }
 
 .padleft {
-    padding-top: 35px;
-    padding-left: 100px;
+  padding-top: 35px;
+  padding-left: 100px;
 }
 
 .padright {
-    padding-top: 35px;
-    padding-right: 100px;
+  padding-top: 35px;
+  padding-right: 100px;
 
 }
 
@@ -305,113 +322,6 @@ html {
     grid-column: 2/4;
 }
 
-
-.page1-bottom {
-    grid-column: 1/5;
-    grid-row: 3/5;
-    padding-left: 100px;
-}
-
-.background {
-    background: linear-gradient(rgba(0, 0, 0, 0.00001), rgba(0, 0, 0, .000001)), url('images/page1_bkgd.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-column: 1/5;
-    grid-row: 3/5;
-}
-
-.margin-sml {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.margin-mix {
-    margin-top: 60px;
-    margin-bottom: 15px;
-}
-
-.margin-right {
-    margin-right: 60%;
-    line-height: 1.5rem;
-}
-
-.btn-reverse {
-    padding: 15px 25px 15px 25px;
-    background-color: #0d0c00;
-    color: white;
-    border-style: solid;
-    border-color: white;
-    border-width: 1.5px;
-    margin-top: 10px;
-}
-
-.page1-pages {
-    grid-column: 2/4;
-    margin-top: 25px;
-}
-
-.ruledivide {
-    border-style: dotted none none;
-    border-color: #fdc107;
-    border-width: 12px;
-    align-content: center;
-    width: 10%;
-}
-
-/*start page 4 css*/
-
-.page4heading {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row: 1;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.wordpresslogo {
-    grid-column-start: 3;
-    grid-row: 2;
-    margin-left: 20px;
-    margin-top: 50px;
-}
-
-.wordpressimg {
-    width: 150%;
-}
-
-.wordpresslist {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 2;
-    margin-left: 150px;
-    margin-top: 50px;
-}
-
-.page4button {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 5;
-    margin-left: 250px;
-
-}
-
-/*  Dan and Thom css  */
-.blog-title {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row: 1;
-    justify-self: center;
-    align-self: center;
-}
-
-.blog-img-col1-top {}
-
-.blog-img-col2-top {}
-
-.blog-img-col1-bottom {}
-
-.blog-img-col2-bottom {}
-
 /***********************/
 /*footer*/
 /***********************/
@@ -426,7 +336,6 @@ html {
     text-transform: uppercase;
     letter-spacing: .7px;
     word-spacing: 2px;
-    margin: 0 auto 10px;
 }
 
 .list-no-style {
@@ -443,7 +352,7 @@ html {
     margin: 0px auto 15px auto;
 }
 
-.footer a {
+.site-links-item a {
     text-decoration: none;
     color: inherit;
 }
@@ -457,6 +366,7 @@ html {
     margin-bottom: 20px;
     height: 65px;
     overflow-y: hidden;
+
 }
 
 .pop-posts-img {
@@ -524,6 +434,10 @@ html {
         height: auto;
     }
 
+    .pop-posts-img {
+        display: none;
+    }
+
     .pop-posts-title {
         margin: 0;
     }
@@ -533,10 +447,8 @@ html {
     }
 
     #form-newsletter {
-        display: flex;
-        flex-direction: column;
+        display: block;
         margin: 20px 0px;
-        align-items: flex-end;
     }
 
     .form-element {
@@ -545,17 +457,13 @@ html {
         margin-bottom: 4px;
     }
 
-    .input-email {
-        align-self: stretch;
-    }
-
     .btn-submit {
         letter-spacing: 1px;
-        max-width: auto;
+        float: right;
     }
 }
 
-@media only screen and (max-width: 776px) {
+@media only screen and (min-width: 500px) and (max-width: 776px) {
     .container.footer {
         column-gap: 1%;
         padding: 1% 2%;
@@ -564,7 +472,6 @@ html {
     .footer-header {
         word-spacing: .5px;
         white-space: nowrap;
-        margin: 4px auto;
     }
 
     .site-links-item {
@@ -589,10 +496,8 @@ html {
     }
 
     #form-newsletter {
-        display: flex;
-        flex-direction: column;
+        display: block;
         margin: 20px 0px;
-        align-items: flex-end;
     }
 
     .form-element {
@@ -601,8 +506,129 @@ html {
         margin-bottom: 4px;
     }
 
-    .input-email {
-        align-self: stretch;
+    .btn-submit {
+        float: right;
     }
+}
 
+.page1-bottom{
+  grid-column: 1/5;
+  grid-row: 3/5;
+  padding-left: 100px;
+}
+
+.background {
+  background: linear-gradient( rgba(0, 0, 0, 0.00001), rgba(0, 0, 0, .000001)), url('images/page1_bkgd.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1/5;
+  grid-row: 3/5;
+}
+
+.margin-sml {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.margin-mix {
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+
+.margin-right {
+  margin-right: 60%;
+  line-height: 1.5rem;
+}
+
+.btn-reverse {
+    padding: 15px 25px 15px 25px;
+    background-color: #0d0c00;
+    color: white;
+    border-style:solid;
+    border-color: white;
+    border-width: 1.5px;
+    margin-top: 10px;
+}
+
+.page1-pages {
+  grid-column: 2/4;
+  margin-top: 25px;
+}
+
+.ruledivide {
+  border-style: dotted none none;
+  border-color: #fdc107;
+  border-width: 12px ;
+  align-content: center;
+  width: 10%;
+}
+
+/*start page 4 css*/
+
+.page4heading {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 1;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.wordpresslogo {
+    grid-column-start: 3;
+    grid-row: 2;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.wordpressimg {
+    width: 150%;
+}
+
+.wordpresslist {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.page4button {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    margin-left: 250px;
+
+}
+
+/*  Dan and Thom css  */
+.blog-title {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.blog-img-col1-top {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 2;
+  justify-self: end;
+  align-self: stretch;
+}
+
+.blog-img-col2-top {
+
+}
+
+.blog-img-col1-bottom {
+
+}
+
+.blog-img-col2-bottom {
+
+}
+
+.blog-item {
+  flex-direction: row;
 }
