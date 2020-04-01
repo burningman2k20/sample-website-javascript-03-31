@@ -104,9 +104,11 @@ body, html {
     color: #cb9f17
         /*yellow text*/
 }
+
 .co-t-black{
     color:black;
 }
+
 
 .co-t-dimgray {
     color: dimgrey;
@@ -176,6 +178,12 @@ body, html {
 .font-one-lg {
     font-family: 'Open Sans', sans-serif;
     font-size: 4rem;
+
+}
+
+.font-two-sm {
+    font-family: sans-serif;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -245,34 +253,58 @@ body, html {
     height: 35%;
 }
 
-/*  Start of 1st page classes */
+
+/*  Start of 1st page classes - Gervan */
+
 .page1-topbar {
-    display: inline-flex;
-    justify-content: flex-end;
+    display: flex;
+    justify-content: space-between;
     background-color: #3B5999;
-    grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column: 1 / 5;
 }
 
 .page1-nav {
-    display: inline-flex;
+    display:flex;
     background-color: #3092C3;
-    grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column: 1/5;
+    grid-row: 2/2;
+    justify-content: center;
+    padding-top: 10px;
+
+}
+.page1-nav a{
+    margin: 5px 20px 0 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.searchbar{
+    width:15%;
+    height: 20px;
+    align-content:center;
+    vertical-align: top;
+    margin-left: 70px;
+
 }
 
 .nav-btn {
-    display: inline-block;
-    background-color: #3092C3;
-    width: 20%;
-    padding: 0;
-    border-style: none;
+    background-image: url(images/search.jfif);
+    background-repeat: no-repeat;
+    width: 35px;
+    height:25px;
 }
 
-.logolayout {
-    padding-left: 75px;
-    padding-top: 20px;
+.padleft {
+  padding-top: 35px;
+  padding-left: 100px;
 }
+
+.padright {
+  padding-top: 35px;
+  padding-right: 100px;
+
+}
+
 
 .logobutton {
     background-color: #3B5999;
@@ -284,22 +316,8 @@ body, html {
     margin-left: 20px;
 }
 
-.page1-bottom {
-    background-color: #1D212C;
-    grid-column-start: 1;
-    grid-column-end: 6;
-}
-
 .page1-pages {
     grid-column: 2/4;
-}
-
-.ruledivide {
-    border-style: dotted none none;
-    border-color: #fdc107;
-    border-width: 12px;
-    align-content: center;
-    width: 10%;
 }
 
 /***********************/
@@ -446,7 +464,7 @@ body, html {
 @media only screen and (min-width: 500px) and (max-width: 776px) {
     .container.footer {
         column-gap: 1%;
-        padding: 1% 1%;
+        padding: 1% 2%;
     }
 
     .footer-header {
@@ -491,6 +509,58 @@ body, html {
     }
 }
 
+.page1-bottom{
+  grid-column: 1/5;
+  grid-row: 3/5;
+  padding-left: 100px;
+}
+
+.background {
+  background: linear-gradient( rgba(0, 0, 0, 0.00001), rgba(0, 0, 0, .000001)), url('images/page1_bkgd.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1/5;
+  grid-row: 3/5;
+}
+
+.margin-sml {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.margin-mix {
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+
+.margin-right {
+  margin-right: 60%;
+  line-height: 1.5rem;
+}
+
+.btn-reverse {
+    padding: 15px 25px 15px 25px;
+    background-color: #0d0c00;
+    color: white;
+    border-style:solid;
+    border-color: white;
+    border-width: 1.5px;
+    margin-top: 10px;
+}
+
+.page1-pages {
+  grid-column: 2/4;
+  margin-top: 25px;
+}
+
+.ruledivide {
+  border-style: dotted none none;
+  border-color: #fdc107;
+  border-width: 12px ;
+  align-content: center;
+  width: 10%;
+}
+
 /*start page 4 css*/
 
 .page4heading {
@@ -524,4 +594,5 @@ body, html {
     grid-column-end: 4;
     grid-row-start: 5;
     margin-left: 250px;
+
 }
