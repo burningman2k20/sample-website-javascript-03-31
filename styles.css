@@ -575,36 +575,40 @@ body, html {
   display: flex;
   grid-column-start: 1;
   grid-column-end: 3;
-  grid-row: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
   justify-self: end;
-  align-self: stretch;
+  align-self: flex-end;
 }
 
 .blog-img-col2-top {
   display: flex;
   grid-column-start: 3;
   grid-column-end: 5;
-  grid-row: 2;
-  justify-self: Start;
-  align-self: stretch;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: start;
+  align-self: flex-end;
 }
 
 .blog-img-col1-bottom {
   display: flex;
   grid-column-start: 1;
   grid-column-end: 3;
-  grid-row: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
   justify-self: end;
-  align-self: stretch;
+  align-self: flex-start;
 }
 
 .blog-img-col2-bottom {
   display: flex;
   grid-column-start: 3;
   grid-column-end: 5;
-  grid-row: 3;
-  justify-self: Start;
-  align-self: stretch;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  justify-self: start;
+  align-self: flex-start;
 }
 
 .blog-item {
