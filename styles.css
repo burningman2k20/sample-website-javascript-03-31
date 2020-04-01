@@ -43,25 +43,22 @@ body, html {
     color: white;
 }
 
-/*
-.post-footer {
-  width: 60%;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 4;
-  grid-row-end: 4;
-  margin:auto;
+/* Dave & Aus */
+
+/* page 3 column 1*/
+.page3-col1{
+    grid-auto-columns: auto;
 }
 
-.footer {
-    width: 60%;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    margin: auto;
+/* page 3 column 2*/
+.page3-col2{
+  justify-content: center;
 }
-*/
+
+/* page 3 column 3*/
+.page3-col3{
+  justify-content: center;
+}
 
 .container-thom {
     display: grid;
