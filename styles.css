@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .nav {
     grid-column-start: 3;
     grid-column-end: 5;
@@ -68,32 +67,66 @@ body, html {
 }
 
 .co-bg-lightgray {
-    background-color: #f4f4f4 /*gray backgrond*/
+    background-color: #f4f4f4; /*gray backgrond*/
 }
 
 .co-bg-yellow{
-    background-color: #fdc107 /*yellow button */
+    background-color: #fdc107; /*yellow button */
 }
 
 .co-bg-gray {
-    background-color: #282627 /*drck gray button*/
+    background-color: #282627; /*drck gray button*/
 }
 
 .co-bg-darkgray{
-    background-color: #31302e /*drck gray fotter background*/
+    background-color: #31302e; /*drck gray fotter background*/
 }
 
 .co-t-white {
-    color:#b0b8ba  /*white text*/
+    color: white;  /*white text*/
 }
 
 .co-t-gray {
-    color: #282627 /*drck gray text */
+    color: darkgray; /*drck gray text */
 }
 
 .co-t-yellow {
-    color: #cb9f17 /*yellow text*/
+    color: #fdc107; /*yellow text*/
 }
+
+/*  Font classes  */
+
+.font-thin {
+    font-weight: 100;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.font-one-sm {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.font-one-md {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.font-one-lg {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+/*  End of Font classes */
 /*aus+dive css*/
 .container-aus-david {
     display: grid;
@@ -136,17 +169,17 @@ body, html {
 }
 
 /*aus+dive css*/
-<<<<<<< HEAD
->>>>>>> 6620302bea4ac426a20bdd29a03570265cd635e9
-=======
 
 /*roaa almadi*/
 .page2-img {
     grid-area: photo;
     height: 50%;
-    width: 70%;
+    width: 90%;
     background-position: center;
+    margin-right: 50px;
+
 }
+
 
 .yellow-btn {
     padding: 10px 15px 10px 15px;
@@ -159,4 +192,62 @@ body, html {
     width: 85%;
     height: 35%;
 }
->>>>>>> a59601fffad16045d096d231ea2139efadd235dc
+
+/*  Start of 1st page classes */
+
+.page1-topbar {
+  display: inline-flex;
+  justify-content: flex-end;
+  background-color: #3B5999;
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.page1-nav {
+  display: inline-flex;
+  background-color: #3092C3;
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.nav-btn {
+    display: inline-block;
+    background-color: #3092C3;
+    width: 20%;
+    padding: 0;
+    border-style: none;
+}
+
+.logolayout {
+  padding-left: 75px;
+  padding-top: 20px;
+}
+
+.logobutton {
+    background-color: #3B5999;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}
+
+.page1-bottom {
+  background-color: #1D212C;
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.page1-pages {
+  grid-column: 2/4;
+}
+
+.ruledivide {
+  border-style: dotted none none;
+  border-color: #fdc107;
+  border-width: 12px ;
+  align-content: center;
+  width: 10%;
+}
+
