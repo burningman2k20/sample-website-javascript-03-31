@@ -89,6 +89,11 @@ body, html {
     font-size: .7rem;
 }
 
+.font-one-xsm {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.85rem;
+}
+
 .font-one-sm {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
@@ -166,7 +171,12 @@ body, html {
     grid-template-columns: repeat(3, 350px);
     padding: 5px;
     height: 570px;
+<<<<<<< HEAD
+    justify-content:center;
+   
+=======
     justify-content: center;
+>>>>>>> e6d32d4be0afb3336659195c218488d19dc110d9
 }
 
 .center-img {
@@ -192,6 +202,7 @@ body, html {
     background-color: white;
     color: white;
     height: 450px;
+    border-bottom:1.5px solid #eee;
 }
 
 .btn {
@@ -219,7 +230,7 @@ body, html {
 
 .text-position {
     text-align: left;
-    width: 85%;
+    width: 90%;
     height: 35%;
 }
 
