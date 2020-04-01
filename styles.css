@@ -457,6 +457,7 @@ html {
     margin-bottom: 20px;
     height: 65px;
     overflow-y: hidden;
+    line-height: 12px;
 }
 
 .pop-posts-img {
@@ -604,5 +605,7 @@ html {
     .input-email {
         align-self: stretch;
     }
-
 }
+/******************/
+/*End of Footer*?
+/******************/
