@@ -596,6 +596,11 @@ body, html {
 }
 
 /*  Dan and Thom css  */
+h5, p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
 .blog-title {
   grid-column-start: 1;
   grid-column-end: 5;
@@ -646,4 +651,32 @@ body, html {
 
 .blog-item {
   flex-direction: row;
+  margin: 0px 1rem;
+}
+
+.blog-item img, .blog-item h5 {
+  width: 100%;
+  max-width: 225px;
+  height: auto;
+}
+
+.btn-group {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row: 6;
+  justify-self: center;
+  align-self: center;
+}
+
+.btn-group button {
+  float: left;
+  width: 25px;
+  height: 25px;
+  border: none;
+}
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
 }
