@@ -601,7 +601,11 @@ body, html {
 
 /*  Dan and Thom css  */
 .blog-title {
-
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
 }
 
 .blog-img-col1-top {
@@ -617,5 +621,5 @@ body, html {
 }
 
 .blog-img-col2-bottom {
-  
+
 }
