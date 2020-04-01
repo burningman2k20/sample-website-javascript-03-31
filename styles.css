@@ -609,7 +609,10 @@ body, html {
 }
 
 .blog-img-col1-top {
-
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 2;
 }
 
 .blog-img-col2-top {
@@ -622,4 +625,8 @@ body, html {
 
 .blog-img-col2-bottom {
 
+}
+
+.blog-item {
+  flex-direction: row;
 }
