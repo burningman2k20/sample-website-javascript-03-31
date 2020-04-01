@@ -48,6 +48,9 @@ body, html {
 .co-t-yellow {
     color: #fdc107; /*yellow text*/
 }
+.co-t-black{
+    color:black;
+}
 
 /*  Font classes  */
 
@@ -204,4 +207,38 @@ body, html {
   border-width: 12px ;
   align-content: center;
   width: 10%;
+}
+/*start page 4 css*/
+
+.page4heading {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 1;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.wordpresslogo {
+    grid-column-start: 3;
+    grid-row: 2;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.wordpressimg {
+    width: 150%;
+}
+
+.wordpresslist {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.page4button {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    margin-left: 250px;
 }
