@@ -140,15 +140,6 @@ body, html {
 /*  End of Font classes and decorations */
 
 /* Page 3 - aus & dave css*/
-.container-aus-david {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(3, 350px);
-    padding: 5px;
-    height: 570px;
-    justify-content: center;
-}
-
 .center-img {
     justify-content: center;
 }
