@@ -1,14 +1,13 @@
 /*  this is reset code and should be kept at the top of the document */
-body,
-html {
-    padding: 0px;
-    margin: 0px;
+body, html {
+  padding: 0px;
+  margin: 0px;
 }
 
 .container {
-    display: grid;
-    height: 100vh;
-    /*
+  display: grid;
+  height: 100vh;
+  /*
     Using the grid.
     * there are 4 columns of equal size. so to span the entire length
       you will need to use column end 5.
@@ -18,110 +17,9 @@ html {
       for alignment option and any other tips you may need to place your
       child elements.
   */
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 12% 8% 30% 30% 8% 12%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 12% 8% 30% 30% 8% 12%;
 }
-
-/* Text and Background colors START here */
-.co-bg-lightgray {
-    background-color: #f4f4f4;
-    /*gray backgrond*/
-}
-
-.co-bg-gray {
-    background-color: #282627;
-    /*drck gray button*/
-}
-
-.co-bg-darkgray {
-    background-color: #31302e;
-    /*drck gray fotter background*/
-}
-
-.co-bg-yellow {
-    background-color: #fdc107;
-    /*yellow button */
-}
-
-.co-t-white {
-    color: white;
-    /*white text*/
-}
-
-.co-t-white2 {
-    color: #b0b8ba;
-    /*white text*/
-}
-
-.co-t-gray {
-    color: darkgray;
-    /*drck gray text */
-}
-
-.co-t-gray2 {
-    color: #282627;
-    /*drck gray text */
-}
-
-.co-t-dimgray {
-    color: dimgrey;
-}
-
-.co-t-yellow2 {
-    color: #cb9f17;
-    /*yellow text*/
-}
-
-.co-t-yellow {
-    color: #fdc107;
-    /*yellow text*/
-}
-
-.co-t-black {
-    color: black;
-}
-
-/* End of Text and Background colors*/
-
-/*  Font classes and decorations START here */
-.font-thin {
-    font-weight: 100;
-}
-
-.font-italic {
-    font-style: italic;
-}
-
-.font-bold {
-    font-weight: 600;
-}
-
-.font-one-xsm {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.7rem;
-}
-
-.font-one-sm {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-}
-
-.font-one-md {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
-}
-
-.font-one-lg {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 4rem;
-}
-
-.font-two-sm {
-    font-family: sans-serif;
-    font-size: 1rem;
-}
-
-/*  End of Font classes and decorations */
 
 .nav {
     grid-column-start: 3;
@@ -166,11 +64,100 @@ html {
 .container-thom {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(2, 500px);
+    grid-template-columns: repeat(2,500px);
     padding: 25px;
     height: 570px;
-    justify-content: center;
+    justify-content:center;
 }
+
+/* Text and Background colors START here */
+.co-bg-lightgray {
+    background-color: #f4f4f4;    /*gray backgrond*/
+}
+
+.co-bg-gray {
+    background-color: #282627;    /*drck gray button*/
+}
+
+.co-bg-darkgray {
+    background-color: #31302e;    /*drck gray fotter background*/
+}
+
+.co-bg-yellow {
+    background-color: #fdc107;  /*yellow button */
+}
+
+.co-t-white {
+    color: white;  /*white text*/
+}
+
+.co-t-white2 {
+    color: #b0b8ba;  /*white text*/
+}
+
+.co-t-gray {
+    color: darkgray;  /*drck gray text */
+}
+
+.co-t-gray2 {
+    color: #282627;  /*drck gray text */
+}
+
+.co-t-dimgray {
+    color: dimgrey;
+}
+
+.co-t-yellow2 {
+    color: #cb9f17;    /*yellow text*/
+}
+
+.co-t-yellow {
+    color: #fdc107;  /*yellow text*/
+}
+
+.co-t-black{
+    color:black;
+}
+/* End of Text and Background colors*/
+
+/*  Font classes and decorations START here */
+.font-thin {
+    font-weight: 100;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-bold {
+    font-weight: 600;
+}
+
+.font-one-xsm {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .7rem;
+}
+
+.font-one-sm {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.font-one-md {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.font-one-lg {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+}
+
+.font-two-sm {
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+/*  End of Font classes and decorations */
 
 /*aus+dive css*/
 .container-aus-david {
@@ -179,7 +166,7 @@ html {
     grid-template-columns: repeat(3, 350px);
     padding: 5px;
     height: 570px;
-    justify-content:center;
+    justify-content: center;
 }
 
 .center-img {
@@ -205,7 +192,6 @@ html {
     background-color: white;
     color: white;
     height: 450px;
-    border-bottom:1.5px solid #eee;
 }
 
 .btn {
@@ -221,9 +207,7 @@ html {
     width: 90%;
     background-position: center;
     margin-right: 50px;
-
 }
-
 
 .yellow-btn {
     padding: 10px 15px 10px 15px;
@@ -233,10 +217,42 @@ html {
 
 .text-position {
     text-align: left;
-    width: 90%;
+    width: 85%;
     height: 35%;
+
 }
 
+.border-bottom {
+    border-bottom:1.5px solid #767676;
+}
+
+.col1-top-1 {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2;
+    justify-self: end;
+    align-self: stretch;
+
+}
+
+.col2-top-2 {
+    display: flex;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 2;
+    justify-self: Start;
+    align-self: stretch;
+}
+
+.col2-top-3 {
+    display: flex;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row: 2;
+    justify-self: Start;
+    align-self: stretch;
+}
 
 /*  Start of 1st page classes - Gervan */
 
@@ -248,7 +264,7 @@ html {
 }
 
 .page1-nav {
-    display: flex;
+    display:flex;
     background-color: #3092C3;
     grid-column: 1/5;
     grid-row: 2/2;
@@ -256,38 +272,35 @@ html {
     padding-top: 10px;
 
 }
-
-.page1-nav a {
+.page1-nav a{
     margin: 5px 20px 0 20px;
     text-decoration: none;
     text-align: center;
 }
 
-.searchbar {
-    width: 15%;
+.searchbar{
+    width:15%;
     height: 20px;
-    align-content: center;
+    align-content:center;
     vertical-align: top;
     margin-left: 70px;
-
 }
 
 .nav-btn {
     background-image: url(images/search.jfif);
     background-repeat: no-repeat;
     width: 35px;
-    height: 25px;
+    height:25px;
 }
 
 .padleft {
-    padding-top: 35px;
-    padding-left: 100px;
+  padding-top: 35px;
+  padding-left: 100px;
 }
 
 .padright {
-    padding-top: 35px;
-    padding-right: 100px;
-
+  padding-top: 35px;
+  padding-right: 100px;
 }
 
 
@@ -305,57 +318,56 @@ html {
     grid-column: 2/4;
 }
 
-
-.page1-bottom {
-    grid-column: 1/5;
-    grid-row: 3/5;
-    padding-left: 100px;
+.page1-bottom{
+  grid-column: 1/5;
+  grid-row: 3/5;
+  padding-left: 100px;
 }
 
 .background {
-    background: linear-gradient(rgba(0, 0, 0, 0.00001), rgba(0, 0, 0, .000001)), url('images/page1_bkgd.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-column: 1/5;
-    grid-row: 3/5;
+  background: linear-gradient( rgba(0, 0, 0, 0.00001), rgba(0, 0, 0, .000001)), url('images/page1_bkgd.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1/5;
+  grid-row: 3/5;
 }
 
 .margin-sml {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .margin-mix {
-    margin-top: 60px;
-    margin-bottom: 15px;
+  margin-top: 60px;
+  margin-bottom: 15px;
 }
 
 .margin-right {
-    margin-right: 60%;
-    line-height: 1.5rem;
+  margin-right: 60%;
+  line-height: 1.5rem;
 }
 
 .btn-reverse {
     padding: 15px 25px 15px 25px;
     background-color: #0d0c00;
     color: white;
-    border-style: solid;
+    border-style:solid;
     border-color: white;
     border-width: 1.5px;
     margin-top: 10px;
 }
 
 .page1-pages {
-    grid-column: 2/4;
-    margin-top: 25px;
+  grid-column: 2/4;
+  margin-top: 25px;
 }
 
 .ruledivide {
-    border-style: dotted none none;
-    border-color: #fdc107;
-    border-width: 12px;
-    align-content: center;
-    width: 10%;
+  border-style: dotted none none;
+  border-color: #fdc107;
+  border-width: 12px ;
+  align-content: center;
+  width: 10%;
 }
 
 /*start page 4 css*/
@@ -386,7 +398,6 @@ html {
     margin-left: 150px;
     margin-top: 50px;
 }
-
 .page4button {
     grid-column-start: 2;
     grid-column-end: 4;
@@ -396,21 +407,88 @@ html {
 }
 
 /*  Dan and Thom css  */
-.blog-title {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row: 1;
-    justify-self: center;
-    align-self: center;
+h5, p {
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
-.blog-img-col1-top {}
+.blog-title {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
+}
 
-.blog-img-col2-top {}
+.blog-img-col1-top {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: end;
+  align-self: flex-end;
+}
 
-.blog-img-col1-bottom {}
+.blog-img-col2-top {
+  display: flex;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: start;
+  align-self: flex-end;
+}
 
-.blog-img-col2-bottom {}
+.blog-img-col1-bottom {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  justify-self: end;
+  align-self: flex-start;
+}
+
+.blog-img-col2-bottom {
+  display: flex;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  justify-self: start;
+  align-self: flex-start;
+}
+
+.blog-item {
+  flex-direction: row;
+  margin: 0px 1rem;
+}
+
+.blog-item img, .blog-item h5 {
+  width: 100%;
+  max-width: 225px;
+  height: auto;
+}
+
+.btn-group {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row: 6;
+  justify-self: center;
+  align-self: center;
+}
+
+.btn-group button {
+  float: left;
+  width: 25px;
+  height: 25px;
+  border: none;
+}
+
+.btn-group button:hover {
+  background-color: lightgray;
+}
 
 /***********************/
 /*footer*/
@@ -457,7 +535,7 @@ html {
     margin-bottom: 20px;
     height: 65px;
     overflow-y: hidden;
-    line-height: 12px;
+    line-height: .8em;
 }
 
 .pop-posts-img {
@@ -475,6 +553,7 @@ html {
 .pop-posts-body {
     margin: 0;
     overflow: hidden;
+    height: 3.5em;
 }
 
 #form-newsletter {
@@ -607,5 +686,6 @@ html {
     }
 }
 /******************/
-/*End of Footer*?
+/*End of Footer*
 /******************/
+
