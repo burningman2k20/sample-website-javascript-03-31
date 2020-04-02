@@ -345,13 +345,25 @@ body, html {
 }
 
 .btn-reverse {
+    grid-column: 1/2;
+      border-style:none;
+      margin-top: 20px;
+}
+
+.btn-reverse button {
     padding: 15px 25px 15px 25px;
-    background-color: #0d0c00;
+    border-width: 1.5px;
+    margin-top: 10px;
+    background-color: #1D212C;
     color: white;
     border-style:solid;
     border-color: white;
-    border-width: 1.5px;
-    margin-top: 10px;
+}
+
+.btn-reverse button:hover {
+    background-color: white;
+    color: #1D212C;
+    border-color: #1D212C;
 }
 
 .page1-pages {
@@ -359,12 +371,25 @@ body, html {
   margin-top: 25px;
 }
 
-.ruledivide {
-  border-style: dotted none none;
-  border-color: #fdc107;
-  border-width: 10px ;
-  align-content: center;
-  width: 10%;
+.btn-group-rd {
+  grid-column: 2/4;
+  grid-row: 6;
+  justify-self: center;
+  align-self: auto;
+}
+
+.btn-group-rd button {
+  float: left;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.btn-group-rd button:hover {
+  background-color: lightgray;
 }
 
 /*start page 4 css*/
