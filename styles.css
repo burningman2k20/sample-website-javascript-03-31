@@ -146,7 +146,6 @@ body, html {
     width: 100%;
     background-size: cover;
     background-position: center;
-    margin: 3% 3% 3% 3%;
 }
 
 .box {
@@ -161,7 +160,8 @@ body, html {
     padding: 10px 10px 10px 10px;
     background-color: white;
     border: solid;
-}
+    margin:25px;
+  }
 
 /* page 2 roaa almadi*/
 .page2-img {
