@@ -41,15 +41,6 @@ body, html {
     color: white;
 }
 
-.container-thom {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(2,500px);
-    padding: 25px;
-    height: 570px;
-    justify-content:center;
-}
-
 /* Text and Background colors START here */
 .co-bg-lightgray {
     background-color: #f4f4f4;    /*gray backgrond*/
