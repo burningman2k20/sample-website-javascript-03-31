@@ -185,6 +185,7 @@ body, html {
     grid-area: photo;
     background-position: center;
     margin-right: 50px;
+    height: 165px !important;
 }
 
 .yellow-btn {
@@ -215,31 +216,26 @@ body, html {
     display: flex;
     grid-column: 1/5;
     align-self: stretch;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .col1-top-1 {
     display: flex;
     grid-column: 1/2;
     grid-row: 3/4;
-    justify-self: end;
-    align-self: stretch;
-    margin-left: 5%;
 }
 
 .col2-top-2 {
     display: flex;
     grid-column: 3/4;
     grid-row: 3/4;
-    justify-self: Start;
-    align-self: stretch;
 }
 
 .col2-top-3 {
     display: flex;
     grid-column: 5/6;
     grid-row: 3/4;
-    justify-self: Start;
-    align-self: stretch;
 }
 .blogger-start {
     align-items: center;
