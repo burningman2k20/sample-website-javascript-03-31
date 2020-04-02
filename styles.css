@@ -385,6 +385,7 @@ body, html {
 
 .wordpressimg {
     width: 150%;
+
     border-width: 5px;
     border-color: gray;
 }
@@ -404,9 +405,7 @@ body, html {
     margin-top: -200px;
 }
 
-
 /* footer section - Moj*/
-
 .container.footer {
     justify-content: space-around;
     column-gap: 3%;
@@ -418,6 +417,7 @@ body, html {
     text-transform: uppercase;
     letter-spacing: .7px;
     word-spacing: 2px;
+    margin: 0 auto 10px;
 }
 
 .list-no-style {
@@ -434,7 +434,7 @@ body, html {
     margin: 0px auto 15px auto;
 }
 
-.site-links-item a {
+.footer a {
     text-decoration: none;
     color: inherit;
 }
@@ -448,6 +448,7 @@ body, html {
     margin-bottom: 20px;
     height: 65px;
     overflow-y: hidden;
+    line-height: .8em;
 }
 
 .pop-posts-img {
@@ -465,6 +466,7 @@ body, html {
 .pop-posts-body {
     margin: 0;
     overflow: hidden;
+    height: 3.5em;
 }
 
 #form-newsletter {
@@ -517,10 +519,6 @@ body, html {
         height: auto;
     }
 
-    .pop-posts-img {
-        display: none;
-    }
-
     .pop-posts-title {
         margin: 0;
     }
@@ -530,8 +528,10 @@ body, html {
     }
 
     #form-newsletter {
-        display: block;
+        display: flex;
+        flex-direction: column;
         margin: 20px 0px;
+        align-items: flex-end;
     }
 
     .form-element {
@@ -540,13 +540,17 @@ body, html {
         margin-bottom: 4px;
     }
 
+    .input-email {
+        align-self: stretch;
+    }
+
     .btn-submit {
         letter-spacing: 1px;
-        float: right;
+        max-width: auto;
     }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 776px) {
+@media only screen and (max-width: 776px) {
     .container.footer {
         column-gap: 1%;
         padding: 1% 2%;
@@ -555,6 +559,7 @@ body, html {
     .footer-header {
         word-spacing: .5px;
         white-space: nowrap;
+        margin: 4px auto;
     }
 
     .site-links-item {
@@ -579,8 +584,10 @@ body, html {
     }
 
     #form-newsletter {
-        display: block;
+        display: flex;
+        flex-direction: column;
         margin: 20px 0px;
+        align-items: flex-end;
     }
 
     .form-element {
@@ -589,10 +596,11 @@ body, html {
         margin-bottom: 4px;
     }
 
-    .btn-submit {
-        float: right;
+    .input-email {
+        align-self: stretch;
     }
 }
+/*End of Footer*/
 
 /*  Dan and Thom css  */
 h5, p {
