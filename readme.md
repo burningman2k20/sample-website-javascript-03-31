@@ -1,16 +1,25 @@
 javascript exercise
 due april 3rd 2020 @ 5:00pm (end of class)
 
-who i think would do best for each page
+*use media queries from previous project as a start point*
+*min 500px med 776px lrg 992 max 1200*
 
-page 1 - gervan/moj
+*each page will have a div container class*
 
-page 2 - roaa
+font classes - gervan*
 
-page 3 - aus/david
+colours (foreground/background) - roaa*
 
-page 4 - lalaantika
+*who is confirmed to do each page*
 
-page 5 - dan (our latest blog section)
+page 1 - gervan*
 
-page 6 - moj (footer)
+page 2 - roaa*
+
+page 3 - aus/david*
+
+page 4 - lalaantika*
+
+page 5 - dan / thom* (our latest blog section)
+
+page 6 - moj (footer)*
