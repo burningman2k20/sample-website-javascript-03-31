@@ -41,15 +41,6 @@ body, html {
     color: white;
 }
 
-.container-thom {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(2,500px);
-    padding: 25px;
-    height: 570px;
-    justify-content:center;
-}
-
 /* Text and Background colors START here */
 .co-bg-lightgray {
     background-color: #f4f4f4;    /*gray backgrond*/
@@ -140,15 +131,6 @@ body, html {
 /*  End of Font classes and decorations */
 
 /* Page 3 - aus & dave css*/
-.container-aus-david {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(3, 350px);
-    padding: 5px;
-    height: 570px;
-    justify-content: center;
-}
-
 .center-img {
     justify-content: center;
 }
@@ -164,6 +146,7 @@ body, html {
     width: 100%;
     background-size: cover;
     background-position: center;
+    margin: 3% 3% 3% 3%;
 }
 
 .box {
