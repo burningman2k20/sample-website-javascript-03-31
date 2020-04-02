@@ -169,6 +169,7 @@ body, html {
     background-position: center;
     margin-right: 50px;
     height: 165px !important;
+
 }
 
 .yellow-btn {
@@ -196,27 +197,27 @@ body, html {
 }
 
 .all-boxes {
-    display: flex;
+    display: inline-flex;
     grid-column: 1/5;
-    align-self: stretch;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 75%;
+    margin-left: 12%;
+
 }
 
 .col1-top-1 {
-    display: flex;
+    display: inline-flex;
     grid-column: 1/2;
     grid-row: 3/4;
 }
 
 .col2-top-2 {
-    display: flex;
+    display: inline-flex;
     grid-column: 3/4;
     grid-row: 3/4;
 }
 
 .col2-top-3 {
-    display: flex;
+    display: inline-flex;
     grid-column: 5/6;
     grid-row: 3/4;
 }
