@@ -160,7 +160,8 @@ body, html {
     padding: 10px 10px 10px 10px;
     background-color: white;
     border: solid;
-}
+    margin:25px;
+  }
 
 /* page 2 roaa almadi*/
 .page2-img {
