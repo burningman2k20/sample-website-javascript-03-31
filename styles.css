@@ -134,6 +134,9 @@ body, html {
 .center-img {
     justify-content: center;
 }
+.featurd-padding{
+    padding:10px;
+}
 
 .center-text {
     display: flex;
@@ -154,13 +157,18 @@ body, html {
     background-color: white;
     color: white;
     height: 450px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-
-.btn {
+.button-featurd:hover {
+    background-color: #555555;
+    color: white;
+}
+    .btn {
     padding: 10px 10px 10px 10px;
     background-color: white;
     border: solid;
-    margin:25px;
+    margin:15px;
   }
 
 /* page 2 roaa almadi*/
@@ -169,6 +177,7 @@ body, html {
     background-position: center;
     margin-right: 50px;
     height: 165px !important;
+
 }
 
 .yellow-btn {
@@ -196,27 +205,27 @@ body, html {
 }
 
 .all-boxes {
-    display: flex;
+    display: inline-flex;
     grid-column: 1/5;
-    align-self: stretch;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 75%;
+    margin-left: 12%;
+
 }
 
 .col1-top-1 {
-    display: flex;
+    display: inline-flex;
     grid-column: 1/2;
     grid-row: 3/4;
 }
 
 .col2-top-2 {
-    display: flex;
+    display: inline-flex;
     grid-column: 3/4;
     grid-row: 3/4;
 }
 
 .col2-top-3 {
-    display: flex;
+    display: inline-flex;
     grid-column: 5/6;
     grid-row: 3/4;
 }
