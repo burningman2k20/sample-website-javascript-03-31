@@ -6,7 +6,7 @@ body, html {
 
 .container {
   display: grid;
-  height: 100vh;
+  height: 75vh;
   /*
     Using the grid.
     * there are 4 columns of equal size. so to span the entire length
@@ -182,7 +182,12 @@ body, html {
 }
 
 .border-bottom {
+  height:1px;
+  width:100%;
+  background:#b0b8ba;
     border-bottom:1.5px solid #e5e5e5;
+    grid-row:6;
+    grid-column: 1/5;
 }
 
 .blogger-title {
@@ -198,7 +203,6 @@ body, html {
 .all-boxes {
     display: flex;
     grid-column: 1/5;
-    align-self: stretch;
     margin-left: 10px;
     margin-right: 10px;
 }
