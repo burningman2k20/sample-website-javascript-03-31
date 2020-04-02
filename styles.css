@@ -596,6 +596,11 @@ body, html {
 }
 
 /*  Dan and Thom css  */
+h5, p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
 .blog-title {
   grid-column-start: 1;
   grid-column-end: 5;
@@ -608,38 +613,68 @@ body, html {
   display: flex;
   grid-column-start: 1;
   grid-column-end: 3;
-  grid-row: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
   justify-self: end;
-  align-self: stretch;
+  align-self: flex-end;
 }
 
 .blog-img-col2-top {
   display: flex;
   grid-column-start: 3;
   grid-column-end: 5;
-  grid-row: 2;
-  justify-self: Start;
-  align-self: stretch;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: start;
+  align-self: flex-end;
 }
 
 .blog-img-col1-bottom {
   display: flex;
   grid-column-start: 1;
   grid-column-end: 3;
-  grid-row: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
   justify-self: end;
-  align-self: stretch;
+  align-self: flex-start;
 }
 
 .blog-img-col2-bottom {
   display: flex;
   grid-column-start: 3;
   grid-column-end: 5;
-  grid-row: 3;
-  justify-self: Start;
-  align-self: stretch;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  justify-self: start;
+  align-self: flex-start;
 }
 
 .blog-item {
   flex-direction: row;
+  margin: 0px 1rem;
+}
+
+.blog-item img, .blog-item h5 {
+  width: 100%;
+  max-width: 225px;
+  height: auto;
+}
+
+.btn-group {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row: 6;
+  justify-self: center;
+  align-self: center;
+}
+
+.btn-group button {
+  float: left;
+  width: 25px;
+  height: 25px;
+  border: none;
+}
+
+.btn-group button:hover {
+  background-color: lightgray;
 }
