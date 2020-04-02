@@ -178,24 +178,12 @@ body, html {
     border-radius: 3px;
 }
 
-button:hover {
-    background-color: lightgray;
-    color: #1D212C;
-    border-color: #1D212C;
-}
-
 .text-position {
     text-align: left;
 }
 
 .border-bottom {
-    background: lightgray;
-    height: 1px;
-    width: 75%;
-    grid-row:6;
-    grid-column: 1/5;
-    border:none;
-    
+    border-bottom:1.5px solid #e5e5e5;
 }
 
 .blogger-title {
