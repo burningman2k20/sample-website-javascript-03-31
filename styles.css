@@ -134,15 +134,24 @@ body, html {
 .center-img {
     justify-content: center;
 }
+.featurd-padding{
+    padding:10px;
+}
 
 .center-text {
     display: flex;
     justify-content: center;
 }
-
+.all-boxes-featurd {
+    display: inline-flex;
+    grid-column: 1/5;
+    grid-row:2;
+    width: 75%;
+    margin-left: 12%;
+}
 .photo {
     grid-area: photo;
-    height: 100%;
+    height:90%;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -154,13 +163,18 @@ body, html {
     background-color: white;
     color: white;
     height: 450px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-
-.btn {
+.button-featurd:hover {
+    background-color: #555555;
+    color: white;
+}
+    .btn {
     padding: 10px 10px 10px 10px;
     background-color: white;
     border: solid;
-    margin:25px;
+    margin:15px;
   }
 
 /* page 2 roaa almadi*/
@@ -169,6 +183,7 @@ body, html {
     background-position: center;
     margin-right: 50px;
     height: 165px !important;
+
 }
 
 .yellow-btn {
@@ -181,13 +196,20 @@ body, html {
     text-align: left;
 }
 
+button:hover {
+    background-color: lightgray;
+    color: #1D212C;
+    border-color: #1D212C;
+}
+
 .border-bottom {
-  height:1px;
-  width:100%;
-  background:#b0b8ba;
-    border-bottom:1.5px solid #e5e5e5;
-    grid-row:6;
+
+    background: lightgray;
+    height: 1px;
+    width: 75%;
+    grid-row: 6;
     grid-column: 1/5;
+    border: none;
 }
 
 .blogger-title {
@@ -201,26 +223,27 @@ body, html {
 }
 
 .all-boxes {
-    display: flex;
+    display: inline-flex;
     grid-column: 1/5;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 75%;
+    margin-left: 12%;
+
 }
 
 .col1-top-1 {
-    display: flex;
+    display: inline-flex;
     grid-column: 1/2;
     grid-row: 3/4;
 }
 
 .col2-top-2 {
-    display: flex;
+    display: inline-flex;
     grid-column: 3/4;
     grid-row: 3/4;
 }
 
 .col2-top-3 {
-    display: flex;
+    display: inline-flex;
     grid-column: 5/6;
     grid-row: 3/4;
 }
@@ -555,6 +578,7 @@ body, html {
     .btn-submit {
         letter-spacing: 1px;
         max-width: auto;
+
     }
 }
 
@@ -607,6 +631,15 @@ body, html {
     .input-email {
         align-self: stretch;
     }
+    .all-boxes-featurd {
+        display: block;
+        grid-column: 1/5;
+        width: auto;
+        height:auto;
+       font-size:x-large;
+    }
+
+
 }
 /*End of Footer*/
 
