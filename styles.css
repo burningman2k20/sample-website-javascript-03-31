@@ -810,6 +810,17 @@ h5, p {
     .footer-item {
         justify-self: center;
     }
+    
+    .newsletter {
+        width: 100%;
+        height: 20vh;
+        align-self: flex-start;
+    }
+    
+    .input-email {
+        max-width:none;
+        width: 70%;
+    }
 
     /* Dan */
     .blog-title {
