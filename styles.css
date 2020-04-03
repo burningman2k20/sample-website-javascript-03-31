@@ -190,8 +190,20 @@ body, html {
     text-align: left;
 }
 
+button:hover {
+    background-color: lightgray;
+    color: #1D212C;
+    border-color: #1D212C;
+}
+
 .border-bottom {
-    border-bottom:1.5px solid #e5e5e5;
+   
+    background: lightgray;
+    height: 1px;
+    width: 75%;
+    grid-row: 6;
+    grid-column: 1/5;
+    border: none;
 }
 
 .blogger-title {
