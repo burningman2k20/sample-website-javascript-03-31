@@ -21,15 +21,6 @@ body, html {
   grid-template-rows: 12% 8% 30% 30% 8% 12%;
 }
 
-.nav {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    align-self: center;
-    justify-self: end;
-    grid-row-start: 1;
-    padding-right: 50px;
-}
-
 .center-content {
     grid-column-start: 2;
     grid-column-end: 4;
@@ -131,14 +122,16 @@ body, html {
 .center-img {
     justify-content: center;
 }
+
 .featurd-padding{
-    padding:10px;
+    padding:5px;
 }
 
 .center-text {
     display: flex;
     justify-content: center;
 }
+
 .all-boxes-featurd {
     display: flex;
     grid-column: 1/5;
@@ -146,6 +139,7 @@ body, html {
     width: 75%;
     margin-left: 12%;
 }
+
 .photo {
     grid-area: photo;
     height:90%;
@@ -154,7 +148,7 @@ body, html {
     background-position: center;
 }
 
-.box {
+.box-post {
     border-radius: 3px;
     text-align: center;
     background-color: white;
@@ -167,7 +161,8 @@ body, html {
     background-color: #555555;
     color: white;
 }
-    .btn {
+
+ .btn {
     padding: 10px 10px 10px 10px;
     background-color: white;
     border: solid;
@@ -176,11 +171,16 @@ body, html {
 
 /* page 2 roaa almadi*/
 .page2-img {
-    grid-area: photo;
-    background-position: center;
-    margin-right: 50px;
     height: 165px !important;
+    width: 100%;
+    max-width: 300px;
+}
 
+.blog-item h4, .blog-item p {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  text-align: center;
 }
 
 .yellow-btn {
@@ -200,7 +200,9 @@ button:hover {
 }
 
 .border-bottom {
-
+    grid-column: 1/5;
+    grid-row: 6;
+    align-self: end;
     background: lightgray;
     height: 1px;
     width: 75%;
@@ -210,45 +212,34 @@ button:hover {
 }
 
 .blogger-title {
-    display: block;
     grid-column: 1/5;
-    grid-row: 1/3;
-    align-self: center;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: end;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 100px;
 }
 
 
 .all-boxes {
     display: inline-flex;
     grid-column: 1/5;
-    width: 75%;
-    margin-left: 12%;
-
+    grid-row: 3/5;
+    justify-self: center;
+    align-items: center;
 }
 
-.col1-top-1 {
-    display: inline-flex;
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-
-.col2-top-2 {
-    display: inline-flex;
-    grid-column: 3/4;
-    grid-row: 3/4;
-}
-
-.col2-top-3 {
-    display: inline-flex;
-    grid-column: 5/6;
-    grid-row: 3/4;
-}
 .blogger-start {
     align-items: center;
     margin-top: 50px;
 }
+
+.btn-start-now {
+  grid-column: 1/5;
+  grid-row: 5;
+  justify-self: center;
+  align-self: start;
+}
+
 /*  Start of 1st page classes - Gervan */
 .page1-topbar {
     display: flex;
@@ -256,6 +247,10 @@ button:hover {
     text-align: center;
     grid-column: 1/5;
     background-color: #3B5999;
+}
+
+.nav {
+    padding-right: 50px;
 }
 
 .btn-logo {
@@ -269,29 +264,33 @@ button:hover {
 }
 
 .page1-navbar {
-    display: flex;
-    justify-content: space-between;
     text-align: center;
-    grid-column: 1/5;
-    grid-row: 2/2;
+    grid-column: 1/4;
+    grid-row: 2;
     background-color: #3092C3;
     padding-top: 20px;
 }
 
 .nav-menu {
-    padding-left: 10%;
-    padding-right: 10px;
+    padding-left: 5%;
 }
 
 .nav-button {
     background-color: #3092C3;
     border-style: none;
-    width: 125px;
+    width: auto;
 }
 
 .nav-search {
-  padding-left: 10px;
-  padding-right: 10%;
+  grid-column: 4/5;
+  grid-row: 2;
+  padding-right: 5%;
+  padding-top: 7px;
+  background-color: #3092C3;
+}
+
+.hamburger-btn {
+  display: none;
 }
 
 .searchbar{
@@ -546,7 +545,7 @@ h5, p {
   grid-column: 1/3;
   grid-row: 3/4;
   justify-self: end;
-  align-self: flex-end;
+  align-self: end;
 }
 
 .blog-img-col2-top {
@@ -554,7 +553,7 @@ h5, p {
   grid-column: 3/5;
   grid-row: 3/4;
   justify-self: start;
-  align-self: flex-end;
+  align-self: end;
 }
 
 .blog-img-col1-bottom {
@@ -562,7 +561,7 @@ h5, p {
   grid-column: 1/3;
   grid-row: 4/5;
   justify-self: end;
-  align-self: flex-start;
+  align-self: start;
 }
 
 .blog-img-col2-bottom {
@@ -570,7 +569,7 @@ h5, p {
   grid-column: 3/5;
   grid-row: 4/5;
   justify-self: start;
-  align-self: flex-start;
+  align-self: start;
 }
 
 .blog-item {
@@ -605,9 +604,30 @@ h5, p {
 /* Media Query section */
 
 @media only screen and (min-width: 777px) and (max-width: 992px) {
+  nav {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/2;
+    grid-row: 2;
+    justify-self: center;
+    align-self: start;
+    height: 35px;
+  }
+
+  .hamburger-icon {
+    width: 10px;
+    height: 1px;
+    background-color: black;
+  }
+
+
     .container.footer {
         column-gap: 2%;
-        padding: 2% 4% 3%;
+        padding: 3% 4% 3%;
     }
 
     .footer-header {
@@ -660,8 +680,8 @@ h5, p {
     }
 
     .margin-right {  /* Page 1 items start here */
-      margin-right: 35%;
-      line-height: 1.5rem;
+        margin-right: 35%;
+        line-height: 1.5rem;
     }
 
     .page1-navbar {
@@ -674,12 +694,18 @@ h5, p {
         padding-top: 6px;
     }
 
+    .nav-button {
+        background-color: #3092C3;
+        border-style: none;
+        width: 125px;
+    }
+
     .nav-menu {
         padding: 0 10px 0 3%;
     }
 
     .nav-search {
-      padding: 10px 3% 0 10px;
+        padding: 10px 3% 0 10px;
     }
 }
 @media only screen and (min-width: 300px) and (max-width:501px) {
@@ -715,11 +741,31 @@ h5, p {
 }
 
 @media only screen and (min-width: 500px) and (max-width: 776px) {
+  nav {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/2;
+    grid-row: 2;
+    justify-self: center;
+    align-self: start;
+    height: 35px;
+  }
+
+  .hamburger-icon {
+    width: 10px;
+    height: 1px;
+    background-color: black;
+  }
+
     .container.footer {
         grid-template-columns: repeat(2, 40%);
         column-gap: 5%;
         grid-row-gap: 5%;
-        padding: 1% 2%;
+        padding: 3% 2%;
         justify-content: center;
     }
 
@@ -766,41 +812,85 @@ h5, p {
 
     .input-email {
         align-self: stretch;
+
     }
     .all-boxes-featurd {
-        display: block;
+        display: inline-flex;
         grid-column: 1/5;
-        width: auto;
-        height:auto;
-       font-size:x-large;
+        grid-row: 2;
+        width: 75%;
+        justify-content: stretch;
+    }
+
+    .photo {
+        grid-area: photo;
+        height: auto;
     }
 
     .margin-right {  /* Page 1 items start here */
-      margin-right: 35%;
-      line-height: 1.25rem;
+        margin-right: 5%;
+        line-height: 1rem;
     }
 
     .page1-navbar {
         display: flex;
         justify-content: space-between;
-        text-align: center;
+        text-align:left;
         grid-column: 1/5;
         grid-row: 2/2;
         background-color: #3092C3;
         padding-top: 0;
     }
 
+    .nav-button {
+        background-color: #3092C3;
+        border-style: none;
+        width: 100px;
+    }
+
     .nav-menu {
-        padding: 0 10px 0 3%;
+        padding: 0 0 0 5%;
+    }
+
+    .nav-search {
+        padding: 15px 5% 0 1%;
+    }
+
+    .font-one-sm {
+        font-family: 'Open Sans', sans-serif;
+        font-size: .8rem;
+    }
+
+    .page1-bottom{
+        grid-column: 1/5;
+        grid-row: 3/5;
+        padding-left: 10%;
     }
 }
 
-    .nav-search {
-      padding: 10px 3% 0 10px;
-    }
+@media only screen and (max-width: 499px) {
+  nav {
+    display: none;
+  }
 
-@media only screen and (max-width: 500px) {
+  .hamburger-btn {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/2;
+    grid-row: 2;
+    justify-self: center;
+    align-self: start;
+    height: 35px;
+  }
+
+  .hamburger-icon {
+    width: 10px;
+    height: 1px;
+    background-color: black;
+  }
+
     .container.footer {
+        padding-top: 5%;
         grid-template-columns: auto;
         grid-row-gap: 3%;
         box-sizing: border-box;
@@ -810,16 +900,24 @@ h5, p {
     .footer-item {
         justify-self: center;
     }
-    
+
     .newsletter {
         width: 100%;
-        height: 20vh;
+        height: 25vh;
         align-self: flex-start;
     }
-    
+
     .input-email {
         max-width:none;
         width: 70%;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: space-between;
+        padding: 2% 10%;
+        flex-direction: column;
+        text-align: center;
     }
 
     /* Dan */
@@ -840,5 +938,102 @@ h5, p {
       min-width: 75px;
       min-height: 75px;
     }
+
+    .margin-right {  /* Page 1 items start here */
+        margin-right: 5%;
+        line-height: 1rem;
+    }
+
+    .page1-topbar {
+        display: flex;
+        grid-column: 1/5;
+        background-color: #3B5999;
+        padding-top: 4%;
+    }
+
+    .pad-left {
+        padding-top: 1%;
+        padding-left: 5%;
+    }
+
+    .pad-right {
+        padding-top: 1%;
+        padding-right: 5%;
+    }
+
+    .btn-logo {
+        background-color: #3B5999;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
+        width: 20px;
+        height: 20px;
+        margin-left: 1%;
+      }
+
+    .page1-navbar {
+        display: flex;
+        text-align:left;
+        grid-column: 1/5;
+        grid-row: 2/2;
+        background-color: #3092C3;
+        padding-top: 0;
+    }
+
+    .nav-button {
+        background-color: #3092C3;
+        border-style: none;
+        width: 100px;
+    }
+    .nav-menu {
+        padding: 0;
+    }
+
+    .nav-search {
+        padding: 15px 5% 0 1%;
+    }
+
+    .font-one-sm {
+        font-family: 'Open Sans', sans-serif;
+        font-size: .8rem;
+    }
+
+    .page1-bottom{
+        grid-column: 1/5;
+        grid-row: 3/5;
+        padding-left: 5%;
+    }
+
+    .all-boxes-featurd {
+        display: inline-flex;
+        grid-column: 1/5;
+        grid-row: 2;
+        width: 75%;
+        justify-content: stretch;
+    }
+
+    .photo {
+        grid-area: photo;
+        height: auto;
+    }
+
+    /* page4 code start*/
+    .wordpress-list {
+        grid-row: 3;
+    }
+
+    .page4-button {
+        grid-column: 3/4;
+        margin-left: 120px;
+        margin-top: 100px;
+    }
+
+    .wordpress-logo {
+        grid-column: 3/4;
+        grid-row: 3;
+        margin-left: 80px;
+        margin-top: 150px;
+    }
+    /* page4 code end*/
 }
 /*End of Footer*/
