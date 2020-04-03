@@ -531,7 +531,7 @@ button:hover {
 
 @media only screen and (min-width: 777px) and (max-width: 992px) {
     .container.footer {
-        column-gap: 3%;
+        column-gap: 2%;
         padding: 2% 4% 3%;
     }
 
@@ -547,6 +547,11 @@ button:hover {
     .pop-posts-item {
         margin-bottom: 15px;
         height: auto;
+    }
+    
+    .pop-posts-img {
+        width: 40px;
+        height: 40px;
     }
 
     .pop-posts-title {
@@ -603,10 +608,13 @@ button:hover {
     }
 }
 
-@media only screen and (max-width: 776px) {
+@media only screen and (min-width: 500px) and (max-width: 776px) {
     .container.footer {
-        column-gap: 1%;
+        grid-template-columns: repeat(2, 40%);
+        column-gap: 5%;
+        grid-row-gap: 5%;
         padding: 1% 2%;
+        justify-content: center;
     }
 
     .footer-header {
@@ -614,9 +622,18 @@ button:hover {
         white-space: nowrap;
         margin: 4px auto;
     }
-
+    
     .site-links-item {
         margin: 0 auto 10px;
+    }
+    
+    .site-links {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+    
+    .pop-posts {
+        height: 30vh;
     }
 
     .pop-posts-item {
@@ -624,16 +641,8 @@ button:hover {
         height: auto;
     }
 
-    .pop-posts-img {
-        display: none;
-    }
-
     .pop-posts-title {
         margin: 0;
-    }
-
-    .pop-posts-body {
-        display: none;
     }
 
     #form-newsletter {
@@ -678,11 +687,58 @@ button:hover {
     .nav-menu {
         padding: 0 10px 0 3%;
     }
+}
 
     .nav-search {
       padding: 10px 3% 0 10px;
     }
+    
+@media only screen and (max-width: 500px) {
+    .container.footer {
+        grid-template-columns: auto;
+        grid-row-gap: 3%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    
+    .footer-item {
+        justify-self: center;
+    }
 
+    .footer-header {
+        word-spacing: .5px;
+        white-space: nowrap;
+        margin: 4px auto;
+    }
+
+    .site-links-item {
+        margin: 0 auto 10px;
+    }
+
+    .pop-posts-item {
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    .pop-posts-title {
+        margin: 0;
+    }
+    
+    .newsletter {
+        width: 100%;
+        height: 20vh;
+        justify-self: flex-start;
+    }
+    
+    .input-email {
+        width: 70%;
+        max-width: 100%;
+    }
+    
+    #form-newsletter {
+        margin: 10px 0;
+    }
+    
 }
 /*End of Footer*/
 
