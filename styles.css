@@ -21,15 +21,6 @@ body, html {
   grid-template-rows: 12% 8% 30% 30% 8% 12%;
 }
 
-.nav {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    align-self: center;
-    justify-self: end;
-    grid-row-start: 1;
-    padding-right: 50px;
-}
-
 .center-content {
     grid-column-start: 2;
     grid-column-end: 4;
@@ -257,6 +248,10 @@ button:hover {
     background-color: #3B5999;
 }
 
+.nav {
+    padding-right: 50px;
+}
+
 .btn-logo {
     background-color: #3B5999;
     border-style: solid;
@@ -268,29 +263,33 @@ button:hover {
 }
 
 .page1-navbar {
-    display: flex;
-    justify-content: space-between;
     text-align: center;
-    grid-column: 1/5;
-    grid-row: 2/2;
+    grid-column: 1/4;
+    grid-row: 2;
     background-color: #3092C3;
     padding-top: 20px;
 }
 
 .nav-menu {
     padding-left: 5%;
-
 }
 
 .nav-button {
     background-color: #3092C3;
     border-style: none;
-    width: 15%;
+    width: auto;
 }
 
 .nav-search {
+  grid-column: 4/5;
+  grid-row: 2;
   padding-right: 5%;
   padding-top: 7px;
+  background-color: #3092C3;
+}
+
+.hamburger-btn {
+  display: none;
 }
 
 .searchbar{
@@ -604,6 +603,27 @@ h5, p {
 /* Media Query section */
 
 @media only screen and (min-width: 777px) and (max-width: 992px) {
+  nav {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/2;
+    grid-row: 2;
+    justify-self: center;
+    align-self: start;
+    height: 35px;
+  }
+
+  .hamburger-icon {
+    width: 10px;
+    height: 1px;
+    background-color: black;
+  }
+
+
     .container.footer {
         column-gap: 2%;
         padding: 3% 4% 3%;
@@ -749,12 +769,12 @@ h5, p {
         width: 75%;
         justify-content: stretch;
     }
-  
+
     .photo {
         grid-area: photo;
         height: auto;
     }
-   
+
     .margin-right {  /* Page 1 items start here */
         margin-right: 5%;
         line-height: 1rem;
@@ -775,7 +795,7 @@ h5, p {
         border-style: none;
         width: 100px;
     }
-  
+
     .nav-menu {
         padding: 0 0 0 5%;
     }
@@ -819,14 +839,14 @@ h5, p {
         max-width:none;
         width: 70%;
     }
-    
+
     .copyright {
         display: flex;
         justify-content: space-between;
         padding: 2% 10%;
         flex-direction: column;
         text-align: center;
-    } 
+    }
 
     /* Dan */
     .blog-title {
@@ -919,12 +939,12 @@ h5, p {
         width: 75%;
         justify-content: stretch;
     }
-  
+
     .photo {
         grid-area: photo;
         height: auto;
     }
-    
+
     /* page4 code start*/
     .wordpress-list {
         grid-row: 3;
