@@ -1,5 +1,8 @@
+
 javascript exercise
 due april 3rd 2020 @ 5:00pm (end of class)
+
+repo url -> https://github.com/burningman2k20/sample-website-javascript-03-31
 
 *use media queries from previous project as a start point*
 *min 500px med 776px lrg 992 max 1200*
