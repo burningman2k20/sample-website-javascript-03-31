@@ -607,6 +607,11 @@ h5, p {
     display: none;
   }
 
+  .nav-search {
+    grid-column: 2/5;
+    justify-self: start;
+  }
+
   .hamburger-btn {
     display: flex;
     flex-direction: row;
@@ -711,6 +716,11 @@ h5, p {
 @media only screen and (min-width: 500px) and (max-width: 776px) {
   nav {
     display: none;
+  }
+
+  .nav-search {
+    grid-column: 2/5;
+    justify-self: start;
   }
 
   .hamburger-btn {
@@ -839,6 +849,11 @@ h5, p {
 @media only screen and (max-width: 499px) {
   nav {
     display: none;
+  }
+
+  .nav-search {
+    grid-column: 2/5;
+    justify-self: start;
   }
 
   .hamburger-btn {
