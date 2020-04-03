@@ -732,6 +732,12 @@ h5, p {
         align-self: stretch;
     }
     .all-boxes-featurd {
+<<<<<<< HEAD
+        display: inline-flex;
+        grid-column: 1/5;
+      justify-content:stretch;
+      font-size:x-large;
+=======
         display: block;
         width: auto;
        font-size:x-large;
@@ -745,7 +751,9 @@ h5, p {
         height: auto;
         width: auto;
 
+>>>>>>> 18a0bcec29a3fb50ac17264806af219b23f8ac23
     }
+   
 
 
 
@@ -815,20 +823,12 @@ h5, p {
       min-height: 75px;
     }
     .all-boxes-featurd {
-        display: block;
-        width: auto;
+        display: inline-flex;
+        grid-column: 1/5;
+        justify-content: stretch;
         font-size: x-large;
     }
 
-    .box-post {
-        height: auto;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .photo {
-        height: auto;
-        width: auto;
-    }
+   
 }
 /*End of Footer*/
