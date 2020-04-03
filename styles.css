@@ -682,7 +682,7 @@ h5, p {
     }
 }
 
-@media only screen and (min-width: 501px) and (max-width: 776px) {
+@media only screen and (min-width: 500px) and (max-width: 776px) {
     .container.footer {
         grid-template-columns: repeat(2, 40%);
         column-gap: 5%;
@@ -758,8 +758,9 @@ h5, p {
     .nav-search {
       padding: 10px 3% 0 10px;
     }
+}
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 499px) {
     .container.footer {
         grid-template-columns: auto;
         grid-row-gap: 3%;
