@@ -495,7 +495,7 @@ button:hover {
     height: 3.5em;
 }
 
-#form-newsletter {
+.newsletter-form {
     width: auto;
     display: flex;
     padding: 0px;
@@ -632,7 +632,7 @@ h5, p {
         display: none;
     }
 
-    #form-newsletter {
+    .newsletter-form {
         display: flex;
         flex-direction: column;
         margin: 20px 0px;
@@ -715,7 +715,7 @@ h5, p {
         margin: 0;
     }
 
-    #form-newsletter {
+    .newsletter-form {
         display: flex;
         flex-direction: column;
         margin: 20px 0px;
