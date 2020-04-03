@@ -1,0 +1,1054 @@
+/*  this is reset code and should be kept at the top of the document */
+body, html {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  /*
+    Using the grid.
+    * there are 4 columns of equal size. so to span the entire length
+      you will need to use column end 5.
+    * there are 5 rows all of different sizes, the end row will be
+      row end 6.
+    * reffer to article https://css-tricks.com/snippets/css/complete-guide-grid/
+      for alignment option and any other tips you may need to place your
+      child elements.
+  */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 12% 8% 30% 30% 8% 12%;
+}
+
+.center-content {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    color: white;
+}
+
+/* Text and Background colors START here */
+.co-bg-lightgray {
+    background-color: #f4f4f4;    /*gray backgrond*/
+}
+
+.co-bg-gray {
+    background-color: #282627;    /*drck gray button*/
+}
+
+.co-bg-darkgray {
+    background-color: #31302e;    /*drck gray fotter background*/
+}
+
+.co-bg-yellow {
+    background-color: #fdc107;  /*yellow button */
+}
+
+.co-t-white {
+    color: white;  /*white text*/
+}
+
+.co-t-gray {
+    color: lightgray;
+}
+
+.co-t-darkgray {
+    color: darkgray;
+}
+
+.co-t-dimgray {
+    color: dimgrey;
+}
+
+.co-t-gold {
+    color: #cb9f17;
+}
+
+.co-t-yellow {
+    color: #fdc107;  /*yellow text*/
+}
+
+.co-t-black {
+    color:black;
+}
+
+/* End of Text and Background colors*/
+
+/*  Font classes and decorations START here */
+.font-thin {
+    font-weight: 100;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-bold {
+    font-weight: 600;
+}
+
+.font-one-xsm {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .7rem;
+}
+
+.font-one-sm {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.font-one-md {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.font-one-lg {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.25rem;
+}
+
+.font-two-sm {
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+/*  End of Font classes and decorations */
+
+/* Page 3 - aus & dave css*/
+.center-img {
+    justify-content: center;
+}
+
+.featurd-padding{
+    padding:5px;
+}
+
+.center-text {
+    display: flex;
+    justify-content: center;
+}
+
+.all-boxes-featurd {
+    display: flex;
+    grid-column: 1/5;
+    grid-row:3;
+    width: 75%;
+    margin-left: 12%;
+}
+
+.photo {
+    grid-area: photo;
+    height:90%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.box-post {
+    border-radius: 3px;
+    text-align: center;
+    background-color: white;
+    color: white;
+    height: 450px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.button-featurd:hover {
+    background-color: #555555;
+    color: white;
+}
+
+ .btn {
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    border: solid;
+    margin:15px;
+  }
+
+/* page 2 roaa almadi*/
+.page2-img {
+    height: 165px !important;
+    width: 100%;
+    max-width: 300px;
+}
+
+.blog-item h4, .blog-item p {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  text-align: center;
+}
+
+.yellow-btn {
+    padding: 10px 15px 10px 15px;
+    border: hidden;
+    border-radius: 3px;
+}
+
+.text-position {
+    text-align: left;
+}
+
+button:hover {
+    background-color: lightgray;
+    color: #1D212C;
+    border-color: #1D212C;
+}
+
+.border-bottom {
+    grid-column: 1/5;
+    grid-row: 6;
+    align-self: end;
+    background: lightgray;
+    height: 1px;
+    width: 75%;
+    grid-row: 6;
+    grid-column: 1/5;
+    border: none;
+}
+
+.blogger-title {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: end;
+    text-align: center;
+}
+
+
+.all-boxes {
+    display: inline-flex;
+    grid-column: 1/5;
+    grid-row: 3/5;
+    justify-self: center;
+    align-items: center;
+}
+
+.blogger-start {
+    align-items: center;
+    margin-top: 50px;
+}
+
+.btn-start-now {
+  grid-column: 1/5;
+  grid-row: 5;
+  justify-self: center;
+  align-self: start;
+}
+
+/*  Start of 1st page classes - Gervan */
+.page1-topbar {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    grid-column: 1/5;
+    background-color: #3B5999;
+}
+
+.nav {
+    padding-right: 50px;
+}
+
+.btn-logo {
+    background-color: #3B5999;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}
+
+.page1-navbar {
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 2;
+    background-color: #3092C3;
+    padding-top: 20px;
+}
+
+.nav-menu {
+    padding-left: 5%;
+}
+
+.nav-button {
+    background-color: #3092C3;
+    border-style: none;
+    width: auto;
+}
+
+.nav-search {
+  grid-column: 4/5;
+  grid-row: 2;
+  padding-right: 5%;
+  padding-top: 7px;
+  background-color: #3092C3;
+}
+
+.hamburger-btn {
+  display: none;
+}
+
+.searchbar{
+    vertical-align: top;
+    height: 20px;
+    width: 150px;
+}
+
+.btn-search {
+    background-image: url(images/search.jfif);
+    background-repeat: no-repeat;
+    vertical-align: top;
+    width: 30px;
+    height:25px;
+}
+
+.pad-left {
+  padding-top: 35px;
+  padding-left: 100px;
+}
+
+.pad-right {
+  padding-top: 42px;
+  padding-right: 100px;
+}
+
+.page1-pages {
+    grid-column: 2/4;
+}
+
+.page1-bottom{
+  grid-column: 1/5;
+  grid-row: 3/5;
+  padding-left: 100px;
+}
+
+.background {
+  background: linear-gradient( rgba(0, 0, 0, 0.00001), rgba(0, 0, 0, .000001)), url('images/page1_bkgd.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1/5;
+  grid-row: 3/5;
+}
+
+.margin-sml {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.margin-mix {
+  margin-top: 75px;
+  margin-bottom: 15px;
+}
+
+.margin-right {
+  margin-right: 60%;
+  line-height: 1.5rem;
+}
+
+.btn-reverse {
+    grid-column: 1/2;
+      border-style:none;
+      margin-top: 20px;
+}
+
+.btn-reverse button {
+    padding: 15px 25px 15px 25px;
+    border-width: 1.5px;
+    margin-top: 10px;
+    background-color: #1D212C;
+    color: white;
+    border-style:solid;
+    border-color: white;
+}
+
+.btn-reverse button:hover {
+    background-color: white;
+    color: #1D212C;
+    border-color: #1D212C;
+}
+
+.page1-pages {
+  grid-column: 2/4;
+  margin-top: 25px;
+}
+
+.btn-group-rd {
+  grid-column: 2/4;
+  grid-row: 6;
+  justify-self: center;
+  align-self: auto;
+}
+
+.btn-group-rd button {
+  float: left;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.btn-group-rd button:hover {
+  background-color: lightgray;
+}
+
+/*start page 4 css*/
+
+.page4-heading {
+    grid-column: 1/5;
+    grid-row: 1;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.wordpress-logo {
+    grid-column: 3/4;
+    grid-row: 2;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+.wordpress-img {
+    width: 150%;
+    border-width: 5px;
+    border-color: gray;
+}
+
+.wordpress-list {
+    grid-column: 1/3;
+    grid-row: 2;
+    margin-left: 25%;
+    margin-top: 100px;
+}
+.page4-button {
+    display: flex;
+    justify-content: space-around;
+    grid-column: 1/5;
+    grid-row-start: 5;
+    align-items: center;
+    margin-top: 70px;
+}
+
+/* footer section - Moj*/
+.container.footer {
+    justify-content: space-around;
+    column-gap: 3%;
+    height: auto;
+    padding: 2% 8% 3%;
+}
+
+.footer-header {
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    word-spacing: 2px;
+    margin: 0 auto 10px;
+}
+
+.list-no-style {
+    padding: 0;
+    list-style: none;
+}
+
+.site-links-list {
+    margin-top: 0;
+    padding-left: 15px;
+}
+
+.site-links-item {
+    margin: 0px auto 15px auto;
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.pop-posts-item {
+    display: grid;
+    grid-template-areas: "image title"
+        "image body";
+    column-gap: 15px;
+    align-items: start;
+    margin-bottom: 20px;
+    height: 65px;
+    overflow-y: hidden;
+    line-height: .8em;
+}
+
+.pop-posts-img {
+    grid-area: image;
+    object-fit: cover;
+    border: 3px solid white;
+    width: 50px;
+    height: 50px;
+}
+
+.pop-posts-title {
+    margin: 0;
+}
+
+.pop-posts-body {
+    margin: 0;
+    overflow: hidden;
+    height: 3.5em;
+}
+
+#form-newsletter {
+    width: auto;
+    display: flex;
+    padding: 0px;
+    margin: 30px 0px;
+}
+
+.newsletter p {
+    margin: 0;
+}
+
+.form-element {
+    max-width: 130px;
+    border: none;
+    padding: 12px;
+    text-overflow: ellipsis;
+}
+
+.btn-submit {
+    letter-spacing: 1px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 10%;
+}
+
+/*  Dan and Thom css  */
+h5, p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.blog-title {
+  grid-column: 1/5;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.blog-img-col1-top {
+  display: flex;
+  grid-column: 1/3;
+  grid-row: 3/4;
+  justify-self: end;
+  align-self: end;
+}
+
+.blog-img-col2-top {
+  display: flex;
+  grid-column: 3/5;
+  grid-row: 3/4;
+  justify-self: start;
+  align-self: end;
+}
+
+.blog-img-col1-bottom {
+  display: flex;
+  grid-column: 1/3;
+  grid-row: 4/5;
+  justify-self: end;
+  align-self: start;
+}
+
+.blog-img-col2-bottom {
+  display: flex;
+  grid-column: 3/5;
+  grid-row: 4/5;
+  justify-self: start;
+  align-self: start;
+}
+
+.blog-item {
+  flex-direction: row;
+  margin: 0px 1rem;
+}
+
+.blog-item img, .blog-item h5 {
+  width: 100%;
+  max-width: 225px;
+  height: auto;
+}
+
+.btn-group {
+  grid-column: 1/5;
+  grid-row: 6;
+  justify-self: center;
+  align-self: center;
+}
+
+.btn-group button {
+  float: left;
+  width: 25px;
+  height: 25px;
+  border: none;
+}
+
+.btn-group button:hover {
+  background-color: lightgray;
+}
+
+/* Media Query section */
+
+@media only screen and (min-width: 777px) and (max-width: 992px) {
+  nav {
+    display: none;
+  }
+
+  .nav-search {
+    grid-column: 2/5;
+    justify-self: start;
+  }
+
+  .hamburger-btn {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/2;
+    grid-row: 2;
+    justify-self: center;
+    align-self: start;
+    height: 35px;
+  }
+
+  .hamburger-icon {
+    width: 10px;
+    height: 1px;
+    background-color: black;
+  }
+
+
+    .container.footer {
+        column-gap: 2%;
+        padding: 3% 4% 3%;
+    }
+
+    .footer-header {
+        letter-spacing: .3px;
+        word-spacing: 1px;
+    }
+
+    .site-links-item {
+        margin: 0 auto 15px;
+    }
+
+    .pop-posts-item {
+        margin-bottom: 15px;
+        height: auto;
+    }
+
+    .pop-posts-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .pop-posts-title {
+        margin: 0;
+    }
+
+    .pop-posts-body {
+        display: none;
+    }
+
+    #form-newsletter {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0px;
+        align-items: flex-end;
+    }
+
+    .form-element {
+        max-width: 100%;
+        padding: 6px;
+        margin-bottom: 4px;
+    }
+
+    .input-email {
+        align-self: stretch;
+    }
+
+    .btn-submit {
+        letter-spacing: 1px;
+        max-width: auto;
+    }
+
+    .margin-right {  /* Page 1 items start here */
+        margin-right: 35%;
+        line-height: 1.5rem;
+    }
+
+    .page1-navbar {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        grid-column: 1/5;
+        grid-row: 2/2;
+        background-color: #3092C3;
+        padding-top: 6px;
+    }
+
+    .nav-button {
+        background-color: #3092C3;
+        border-style: none;
+        width: 125px;
+    }
+
+    .nav-menu {
+        padding: 0 10px 0 3%;
+    }
+
+    .nav-search {
+        padding: 10px 3% 0 10px;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width:501px) {
+  /*.blogger-title {
+      display: block;
+      grid-column: 1/5;
+      grid-row: 1/3;
+      align-self: center;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 100px;
+  }*/
+
+  .container {
+    display: grid;
+    height: auto;
+    /*grid-template-columns: repeat(4, 1fr);*/
+    /*grid-template-rows: 12% 8% 30% 30% 8% 12%;*/
+  }*/
+
+  .container.feature{
+    height:auto;
+  }
+
+
+  .photo {
+      grid-area: photo;
+      height:40%;
+      width:45%;
+      background-size: cover;
+      background-position: center;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 776px) {
+  nav {
+    display: none;
+  }
+
+  .nav-search {
+    grid-column: 2/5;
+    justify-self: start;
+  }
+
+  .hamburger-btn {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/2;
+    grid-row: 2;
+    justify-self: center;
+    align-self: start;
+    height: 35px;
+  }
+
+  .hamburger-icon {
+    width: 10px;
+    height: 1px;
+    background-color: black;
+  }
+
+    .container.footer {
+        grid-template-columns: repeat(2, 40%);
+        column-gap: 5%;
+        grid-row-gap: 5%;
+        padding: 3% 2%;
+        justify-content: center;
+    }
+
+    .footer-header {
+        word-spacing: .5px;
+        white-space: nowrap;
+        margin: 4px auto;
+    }
+
+    .site-links-item {
+        margin: 0 auto 10px;
+    }
+
+    .site-links {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+
+    .pop-posts {
+        height: 30vh;
+    }
+
+    .pop-posts-item {
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    .pop-posts-title {
+        margin: 0;
+    }
+
+    #form-newsletter {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0px;
+        align-items: flex-end;
+    }
+
+    .form-element {
+        max-width: 100%;
+        padding: 6px;
+        margin-bottom: 4px;
+    }
+
+    .input-email {
+        align-self: stretch;
+
+    }
+    .all-boxes-featurd {
+        display: inline-flex;
+        grid-column: 1/5;
+        grid-row: 2;
+        width: 75%;
+        justify-content: stretch;
+    }
+
+    .photo {
+        grid-area: photo;
+        height: auto;
+    }
+
+    .margin-right {  /* Page 1 items start here */
+        margin-right: 5%;
+        line-height: 1rem;
+    }
+
+    .page1-navbar {
+        display: flex;
+        justify-content: space-between;
+        text-align:left;
+        grid-column: 1/5;
+        grid-row: 2/2;
+        background-color: #3092C3;
+        padding-top: 0;
+    }
+
+    .nav-button {
+        background-color: #3092C3;
+        border-style: none;
+        width: 100px;
+    }
+
+    .nav-menu {
+        padding: 0 0 0 5%;
+    }
+
+    .nav-search {
+        padding: 15px 5% 0 1%;
+    }
+
+    .font-one-sm {
+        font-family: 'Open Sans', sans-serif;
+        font-size: .8rem;
+    }
+
+    .page1-bottom{
+        grid-column: 1/5;
+        grid-row: 3/5;
+        padding-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+  nav {
+    display: none;
+  }
+
+  .nav-search {
+    grid-column: 2/5;
+    justify-self: start;
+  }
+
+  .hamburger-btn {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/2;
+    grid-row: 2;
+    justify-self: center;
+    align-self: start;
+    height: 35px;
+  }
+
+  .hamburger-icon {
+    width: 10px;
+    height: 1px;
+    background-color: black;
+  }
+
+    .container.footer {
+        padding-top: 5%;
+        grid-template-columns: auto;
+        grid-row-gap: 3%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .footer-item {
+        justify-self: center;
+    }
+
+    .newsletter {
+        width: 100%;
+        height: 25vh;
+        align-self: flex-start;
+    }
+
+    .input-email {
+        max-width:none;
+        width: 70%;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: space-between;
+        padding: 2% 10%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Dan */
+    .blog-title {
+      align-self: start;
+    }
+
+    .blog-img-col1-top, .blog-img-col2-top {
+      grid-row: 2/3;
+      align-self: start;
+    }
+
+    .blog-img-col1-bottom, .blog-img-col2-bottom {
+      align-self: start;
+    }
+
+    .blog-item img {
+      min-width: 75px;
+      min-height: 75px;
+    }
+
+    .margin-right {  /* Page 1 items start here */
+        margin-right: 5%;
+        line-height: 1rem;
+    }
+
+    .page1-topbar {
+        display: flex;
+        grid-column: 1/5;
+        background-color: #3B5999;
+        padding-top: 4%;
+    }
+
+    .pad-left {
+        padding-top: 1%;
+        padding-left: 5%;
+    }
+
+    .pad-right {
+        padding-top: 1%;
+        padding-right: 5%;
+    }
+
+    .btn-logo {
+        background-color: #3B5999;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
+        width: 20px;
+        height: 20px;
+        margin-left: 1%;
+      }
+
+    .page1-navbar {
+        display: flex;
+        text-align:left;
+        grid-column: 1/5;
+        grid-row: 2/2;
+        background-color: #3092C3;
+        padding-top: 0;
+    }
+
+    .nav-button {
+        background-color: #3092C3;
+        border-style: none;
+        width: 100px;
+    }
+    .nav-menu {
+        padding: 0;
+    }
+
+    .nav-search {
+        padding: 15px 5% 0 1%;
+    }
+
+    .font-one-sm {
+        font-family: 'Open Sans', sans-serif;
+        font-size: .8rem;
+    }
+
+    .page1-bottom{
+        grid-column: 1/5;
+        grid-row: 3/5;
+        padding-left: 5%;
+    }
+
+    .all-boxes-featurd {
+        display: inline-flex;
+        grid-column: 1/5;
+        grid-row: 2;
+        width: 75%;
+        justify-content: stretch;
+    }
+
+    .photo {
+        grid-area: photo;
+        height: auto;
+    }
+
+    /* page4 code start*/
+    .wordpress-list {
+        grid-row: 3;
+    }
+
+    .page4-button {
+        grid-column: 3/4;
+        margin-left: 120px;
+        margin-top: 100px;
+    }
+
+    .wordpress-logo {
+        grid-column: 3/4;
+        grid-row: 3;
+        margin-left: 80px;
+        margin-top: 150px;
+    }
+    /* page4 code end*/
+}
+/*End of Footer*/
