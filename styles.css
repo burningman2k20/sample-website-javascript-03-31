@@ -176,12 +176,16 @@ body, html {
 
 /* page 2 roaa almadi*/
 .page2-img {
-    grid-area: photo;
-    background-position: center;
-    margin-right: 50px;
     height: 165px !important;
     width: 100%;
     max-width: 300px;
+}
+
+.blog-item h4, .blog-item p {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  text-align: center;
 }
 
 .yellow-btn {
@@ -228,23 +232,6 @@ button:hover {
     align-items: center;
 }
 
-.col1-top-1 {
-    display: inline-flex;
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-
-.col2-top-2 {
-    display: inline-flex;
-    grid-column: 3/4;
-    grid-row: 3/4;
-}
-
-.col2-top-3 {
-    display: inline-flex;
-    grid-column: 5/6;
-    grid-row: 3/4;
-}
 .blogger-start {
     align-items: center;
     margin-top: 50px;
@@ -757,7 +744,7 @@ h5, p {
     .photo {
         height: auto;
         width: auto;
-        
+
     }
 
 
