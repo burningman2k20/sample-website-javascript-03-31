@@ -131,6 +131,7 @@ body, html {
 .center-img {
     justify-content: center;
 }
+
 .featurd-padding{
     padding:5px;
 }
@@ -139,6 +140,7 @@ body, html {
     display: flex;
     justify-content: center;
 }
+
 .all-boxes-featurd {
     display: inline-flex;
     grid-column: 1/5;
@@ -146,6 +148,7 @@ body, html {
     width: 75%;
     margin-left: 12%;
 }
+
 .photo {
     grid-area: photo;
     height:90%;
@@ -167,7 +170,8 @@ body, html {
     background-color: #555555;
     color: white;
 }
-    .btn {
+
+ .btn {
     padding: 10px 10px 10px 10px;
     background-color: white;
     border: solid;
@@ -274,19 +278,19 @@ button:hover {
 }
 
 .nav-menu {
-    padding-left: 10%;
-    padding-right: 10px;
+    padding-left: 5%;
+
 }
 
 .nav-button {
     background-color: #3092C3;
     border-style: none;
-    width: 125px;
+    width: 15%;
 }
 
 .nav-search {
-  padding-left: 10px;
-  padding-right: 10%;
+  padding-right: 5%;
+  padding-top: 7px;
 }
 
 .searchbar{
@@ -655,8 +659,8 @@ h5, p {
     }
 
     .margin-right {  /* Page 1 items start here */
-      margin-right: 35%;
-      line-height: 1.5rem;
+        margin-right: 35%;
+        line-height: 1.5rem;
     }
 
     .page1-navbar {
@@ -669,12 +673,18 @@ h5, p {
         padding-top: 6px;
     }
 
+    .nav-button {
+        background-color: #3092C3;
+        border-style: none;
+        width: 125px;
+    }
+
     .nav-menu {
         padding: 0 10px 0 3%;
     }
 
     .nav-search {
-      padding: 10px 3% 0 10px;
+        padding: 10px 3% 0 10px;
     }
 }
 
@@ -746,27 +756,43 @@ h5, p {
     }
    
     .margin-right {  /* Page 1 items start here */
-      margin-right: 35%;
-      line-height: 1.25rem;
+        margin-right: 5%;
+        line-height: 1rem;
     }
 
     .page1-navbar {
         display: flex;
         justify-content: space-between;
-        text-align: center;
+        text-align:left;
         grid-column: 1/5;
         grid-row: 2/2;
         background-color: #3092C3;
         padding-top: 0;
     }
 
-    .nav-menu {
-        padding: 0 10px 0 3%;
+    .nav-button {
+        background-color: #3092C3;
+        border-style: none;
+        width: 100px;
     }
-}
+  
+    .nav-menu {
+        padding: 0 0 0 5%;
+    }
 
     .nav-search {
-      padding: 10px 3% 0 10px;
+        padding: 15px 5% 0 1%;
+    }
+
+    .font-one-sm {
+        font-family: 'Open Sans', sans-serif;
+        font-size: .8rem;
+    }
+
+    .page1-bottom{
+        grid-column: 1/5;
+        grid-row: 3/5;
+        padding-left: 10%;
     }
 }
 
@@ -819,6 +845,71 @@ h5, p {
     .blog-item img {
       min-width: 75px;
       min-height: 75px;
+    }
+
+    .margin-right {  /* Page 1 items start here */
+        margin-right: 5%;
+        line-height: 1rem;
+    }
+
+    .page1-topbar {
+        display: flex;
+        grid-column: 1/5;
+        background-color: #3B5999;
+        padding-top: 4%;
+    }
+
+    .pad-left {
+        padding-top: 1%;
+        padding-left: 5%;
+    }
+
+    .pad-right {
+        padding-top: 1%;
+        padding-right: 5%;
+    }
+
+    .btn-logo {
+        background-color: #3B5999;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
+        width: 20px;
+        height: 20px;
+        margin-left: 1%;
+      }
+
+    .page1-navbar {
+        display: flex;
+        text-align:left;
+        grid-column: 1/5;
+        grid-row: 2/2;
+        background-color: #3092C3;
+        padding-top: 0;
+    }
+
+    .nav-button {
+        background-color: #3092C3;
+        border-style: none;
+        width: 100px;
+    }
+    .nav-menu {
+        padding: 0;
+    }
+
+    .nav-search {
+        padding: 15px 5% 0 1%;
+    }
+
+    .font-one-sm {
+        font-family: 'Open Sans', sans-serif;
+        font-size: .8rem;
+    }
+
+    .page1-bottom{
+        grid-column: 1/5;
+        grid-row: 3/5;
+        padding-left: 5%;
     }
 
     .all-boxes-featurd {
