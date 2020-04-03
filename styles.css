@@ -801,5 +801,23 @@ h5, p {
       min-width: 75px;
       min-height: 75px;
     }
+    /* page4 code start*/
+    .wordpress-list {
+        grid-row: 3;
+    }
+
+    .page4-button {
+        grid-column: 3/4;
+        margin-left: 120px;
+        margin-top: 100px;
+    }
+
+    .wordpress-logo {
+        grid-column: 3/4;
+        grid-row: 3;
+        margin-left: 80px;
+        margin-top: 150px;
+    }
+    /* page4 code end*/
 }
 /*End of Footer*/
