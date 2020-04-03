@@ -154,7 +154,7 @@ body, html {
     background-position: center;
 }
 
-.box {
+.box-post {
     border-radius: 3px;
     text-align: center;
     background-color: white;
@@ -737,11 +737,21 @@ h5, p {
     }
     .all-boxes-featurd {
         display: block;
-        grid-column: 1/5;
         width: auto;
-        height:auto;
        font-size:x-large;
     }
+    .box-post {
+        height: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .photo {
+        height: auto;
+        width: auto;
+        
+    }
+
+
 
     .margin-right {  /* Page 1 items start here */
       margin-right: 35%;
@@ -807,6 +817,22 @@ h5, p {
     .blog-item img {
       min-width: 75px;
       min-height: 75px;
+    }
+    .all-boxes-featurd {
+        display: block;
+        width: auto;
+        font-size: x-large;
+    }
+
+    .box-post {
+        height: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .photo {
+        height: auto;
+        width: auto;
     }
 }
 /*End of Footer*/
