@@ -132,7 +132,7 @@ body, html {
     justify-content: center;
 }
 .featurd-padding{
-    padding:10px;
+    padding:5px;
 }
 
 .center-text {
@@ -148,10 +148,8 @@ body, html {
 }
 .photo {
     grid-area: photo;
+    height:90%;
     width: 100%;
-    max-width: 350px;
-    height: 100%;
-    max-height: 350px;
     background-size: cover;
     background-position: center;
 }
@@ -165,18 +163,16 @@ body, html {
     margin-left: 10px;
     margin-right: 10px;
 }
-
 .button-featurd:hover {
     background-color: #555555;
     color: white;
 }
-
-.btn {
+    .btn {
     padding: 10px 10px 10px 10px;
     background-color: white;
     border: solid;
     margin:15px;
-}
+  }
 
 /* page 2 roaa almadi*/
 .page2-img {
@@ -499,7 +495,7 @@ button:hover {
     height: 3.5em;
 }
 
-.newsletter-form {
+#form-newsletter {
     width: auto;
     display: flex;
     padding: 0px;
@@ -636,7 +632,7 @@ h5, p {
         display: none;
     }
 
-    .newsletter-form {
+    #form-newsletter {
         display: flex;
         flex-direction: column;
         margin: 20px 0px;
@@ -719,7 +715,7 @@ h5, p {
         margin: 0;
     }
 
-    .newsletter-form {
+    #form-newsletter {
         display: flex;
         flex-direction: column;
         margin: 20px 0px;
@@ -734,8 +730,21 @@ h5, p {
 
     .input-email {
         align-self: stretch;
-    }  
 
+    }
+    .all-boxes-featurd {
+        display: inline-flex;
+        grid-column: 1/5;
+        grid-row: 2;
+        width: 75%;
+        justify-content: stretch;
+    }
+  
+    .photo {
+        grid-area: photo;
+        height: auto;
+    }
+   
     .margin-right {  /* Page 1 items start here */
       margin-right: 35%;
       line-height: 1.25rem;
@@ -754,6 +763,7 @@ h5, p {
     .nav-menu {
         padding: 0 10px 0 3%;
     }
+}
 
     .nav-search {
       padding: 10px 3% 0 10px;
@@ -810,6 +820,20 @@ h5, p {
       min-width: 75px;
       min-height: 75px;
     }
+
+    .all-boxes-featurd {
+        display: inline-flex;
+        grid-column: 1/5;
+        grid-row: 2;
+        width: 75%;
+        justify-content: stretch;
+    }
+  
+    .photo {
+        grid-area: photo;
+        height: auto;
+    }
+    
     /* page4 code start*/
     .wordpress-list {
         grid-row: 3;
