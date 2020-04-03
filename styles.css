@@ -291,7 +291,6 @@ button:hover {
 .nav-search {
   padding-left: 10px;
   padding-right: 10%;
-  margin: 0;
 }
 
 .searchbar{
@@ -661,9 +660,27 @@ button:hover {
        font-size:x-large;
     }
 
-    .margin-right {
-      margin-right: 10%;
+    .margin-right {  /* Page 1 items start here */
+      margin-right: 35%;
       line-height: 1.25rem;
+    }
+
+    .page1-navbar {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        grid-column: 1/5;
+        grid-row: 2/2;
+        background-color: #3092C3;
+        padding-top: 0;
+    }
+
+    .nav-menu {
+        padding: 0 10px 0 3%;
+    }
+
+    .nav-search {
+      padding: 10px 3% 0 10px;
     }
 
 }
