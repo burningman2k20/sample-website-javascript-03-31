@@ -62,33 +62,30 @@ body, html {
     color: white;  /*white text*/
 }
 
-.co-t-white2 {
-    color: #b0b8ba;  /*white text*/
-}
-
 .co-t-gray {
-    color: darkgray;  /*drck gray text */
+    color: lightgray;
 }
 
-.co-t-gray2 {
-    color: #282627;  /*drck gray text */
+.co-t-darkgray {
+    color: darkgray;
 }
 
 .co-t-dimgray {
     color: dimgrey;
 }
 
-.co-t-yellow2 {
-    color: #cb9f17;    /*yellow text*/
+.co-t-gold {
+    color: #cb9f17;
 }
 
 .co-t-yellow {
     color: #fdc107;  /*yellow text*/
 }
 
-.co-t-black{
+.co-t-black {
     color:black;
 }
+
 /* End of Text and Background colors*/
 
 /*  Font classes and decorations START here */
@@ -257,58 +254,11 @@ button:hover {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    background-color: #3B5999;
-    grid-column: 1 / 5;
-}
-
-.page1-nav {
-    display:flex;
-    justify-content: center;
-    text-align: center;
-    background-color: #3092C3;
     grid-column: 1/5;
-    grid-row: 2/2;
-    padding-top: 10px;
+    background-color: #3B5999;
 }
 
-.nav-divider {
-  border-left: 1.5px;
-  border-right: 1.5px;
-  border-color: aqua;
-}
-
-.page1-nav a{
-    margin: 5px 20px 0 20px;
-    text-decoration: none;
-    text-align: center;
-}
-
-.searchbar{
-    width:15%;
-    height: 20px;
-    align-content:center;
-    vertical-align: top;
-    margin-left: 70px;
-}
-
-.nav-btn {
-    background-image: url(images/search.jfif);
-    background-repeat: no-repeat;
-    width: 35px;
-    height:25px;
-}
-
-.padleft {
-  padding-top: 35px;
-  padding-left: 100px;
-}
-
-.padright {
-  padding-top: 42px;
-  padding-right: 100px;
-}
-
-.logobutton {
+.btn-logo {
     background-color: #3B5999;
     border-style: solid;
     border-width: thin;
@@ -316,6 +266,56 @@ button:hover {
     width: 25px;
     height: 25px;
     margin-left: 20px;
+}
+
+.page1-navbar {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    grid-column: 1/5;
+    grid-row: 2/2;
+    background-color: #3092C3;
+    padding-top: 20px;
+}
+
+.nav-menu {
+    padding-left: 10%;
+    padding-right: 10px;
+}
+
+.nav-button {
+    background-color: #3092C3;
+    border-style: none;
+    width: 125px;
+}
+
+.nav-search {
+  padding-left: 10px;
+  padding-right: 10%;
+}
+
+.searchbar{
+    vertical-align: top;
+    height: 20px;
+    width: 150px;
+}
+
+.btn-search {
+    background-image: url(images/search.jfif);
+    background-repeat: no-repeat;
+    vertical-align: top;
+    width: 30px;
+    height:25px;
+}
+
+.pad-left {
+  padding-top: 35px;
+  padding-left: 100px;
+}
+
+.pad-right {
+  padding-top: 42px;
+  padding-right: 100px;
 }
 
 .page1-pages {
@@ -417,7 +417,6 @@ button:hover {
 
 .wordpress-img {
     width: 150%;
-
     border-width: 5px;
     border-color: gray;
 }
@@ -580,7 +579,29 @@ button:hover {
     .btn-submit {
         letter-spacing: 1px;
         max-width: auto;
+    }
 
+    .margin-right {  /* Page 1 items start here */
+      margin-right: 35%;
+      line-height: 1.5rem;
+    }
+
+    .page1-navbar {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        grid-column: 1/5;
+        grid-row: 2/2;
+        background-color: #3092C3;
+        padding-top: 6px;
+    }
+
+    .nav-menu {
+        padding: 0 10px 0 3%;
+    }
+
+    .nav-search {
+      padding: 10px 3% 0 10px;
     }
 }
 @media only screen and (min-width: 300px) and (max-width:501px) {
@@ -672,6 +693,28 @@ button:hover {
        font-size:x-large;
     }
 
+    .margin-right {  /* Page 1 items start here */
+      margin-right: 35%;
+      line-height: 1.25rem;
+    }
+
+    .page1-navbar {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        grid-column: 1/5;
+        grid-row: 2/2;
+        background-color: #3092C3;
+        padding-top: 0;
+    }
+
+    .nav-menu {
+        padding: 0 10px 0 3%;
+    }
+
+    .nav-search {
+      padding: 10px 3% 0 10px;
+    }
 
 }
 /*End of Footer*/
